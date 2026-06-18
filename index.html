@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenidos a Garrucha - Casa de Lina y Antonio</title>
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
         tailwind.config = {
@@ -19,6 +16,14 @@
                         serif: ['Playfair Display', 'serif'],
                     },
                     colors: {
+                        /* CAMBIO: Se añade la paleta de color azul facebook */
+                        facebook: {
+                            DEFAULT: '#1877F2',
+                            50: '#edf4fe',
+                            100: '#d7e6fd',
+                            600: '#1464cc',
+                            700: '#1051a4',
+                        },
                         med: {
                             50: '#f0f7ff',
                             100: '#e0effe',
@@ -61,9 +66,7 @@
 </head>
 <body class="bg-sand-50 text-slate-800 font-sans min-h-screen flex flex-col antialiased">
 
-    <!-- HEADER / HERO -->
     <header class="relative bg-gradient-to-r from-med-800 via-med-700 to-med-600 text-white overflow-hidden shadow-xl">
-        <!-- Decoración de olas -->
         <div class="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-white via-med-500 to-transparent"></div>
         <div class="max-w-6xl mx-auto px-4 py-8 sm:py-12 relative z-10">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
@@ -71,7 +74,7 @@
                     <div class="inline-flex items-center gap-2 px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-xs font-semibold uppercase tracking-wider text-sky-200 mb-3">
                         <i data-lucide="home" class="w-3.5 h-3.5"></i> Home Exchange Guest Guide
                     </div>
-                    <h1 class="text-3.5xl sm:text-5xl font-serif font-bold tracking-tight mb-2">
+                    <h1 class="text-5xl sm:text-6xl font-serif font-bold tracking-tight mb-2">
                         La Casa de Lina y Antonio
                     </h1>
                     <p class="text-sky-100 text-sm sm:text-base max-w-xl flex items-center gap-2">
@@ -87,9 +90,28 @@
                 </div>
             </div>
 
-            <!-- Quick Access widgets -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
-                <!-- Wifi Widget -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+                <div class="bg-white/10 backdrop-blur-md p-1.5 rounded-2xl border border-white/20 h-[84px] overflow-hidden relative">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3184.2255474321035!2d-1.8262521!3d37.1947231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7ad22675d0b98f%3A0x6b306e93bc2fdfdf!2sC.%20Francisca%20Gonz%C3%A1lez%20P%C3%A9rez%2C%201%2C%2004630%20Garrucha%2C%20Almer%C3%ADa!5e0!3m2!1ses!2ses!4v1710000000000!5m2!1ses!2ses" 
+                        class="w-full h-full rounded-xl opacity-90 hover:opacity-100 transition-opacity" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/20 flex items-center gap-3">
+                    <div class="p-2.5 bg-emerald-500/20 rounded-xl text-emerald-200">
+                        <i data-lucide="car" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-emerald-200 font-medium">Plaza de Parking</p>
+                        <p class="text-sm font-bold">Plaza Nº 70 (Planta -1)</p>
+                    </div>
+                </div>
+
                 <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/20 flex items-center justify-between group">
                     <div class="flex items-center gap-3">
                         <div class="p-2.5 bg-sky-500/20 rounded-xl text-sky-200">
@@ -105,18 +127,7 @@
                     </button>
                 </div>
 
-                <!-- Parking Widget -->
-                <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/20 flex items-center gap-3">
-                    <div class="p-2.5 bg-emerald-500/20 rounded-xl text-emerald-200">
-                        <i data-lucide="car" class="w-6 h-6"></i>
-                    </div>
-                    <div>
-                        <p class="text-xs text-emerald-200 font-medium">Plaza de Parking</p>
-                        <p class="text-sm font-bold">Plaza Nº 70 (Planta -1)</p>
-                    </div>
-                </div>
 
-                <!-- Emergency Widget -->
                 <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/20 flex items-center gap-3">
                     <div class="p-2.5 bg-amber-500/20 rounded-xl text-amber-200">
                         <i data-lucide="phone-call" class="w-6 h-6"></i>
@@ -128,41 +139,37 @@
                         </a>
                     </div>
                 </div>
+
             </div>
         </div>
     </header>
 
-    <!-- NAVIGATION TABS -->
     <nav class="sticky top-0 bg-white/95 backdrop-blur-md border-b border-slate-200 z-40 shadow-sm">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex overflow-x-auto gap-1 py-3 custom-scrollbar">
-                <button onclick="switchTab('inicio')" id="tab-inicio" class="tab-btn px-4 py-2.5 rounded-xl text-sm font-bold transition-all duration-200 whitespace-nowrap inline-flex items-center gap-2 bg-med-50 text-med-600">
-                    <i data-lucide="home" class="w-4 h-4"></i> La Casa
+                <button onclick="switchTab('inicio')" id="tab-inicio" class="tab-btn px-4 py-2.5 rounded-xl text-sm font-bold transition-all duration-200 whitespace-nowrap inline-flex items-center gap-2 bg-facebook-50 text-facebook">
+                    <i data-lucide="home" class="w-4 h-4"></i> LA CASA
                 </button>
                 <button onclick="switchTab('registro')" id="tab-registro" class="tab-btn px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 whitespace-nowrap inline-flex items-center gap-2 text-slate-500 hover:text-slate-800 hover:bg-slate-100">
-                    <i data-lucide="key" class="w-4 h-4"></i> Llegada y Salida
+                    <i data-lucide="key" class="w-4 h-4"></i> LLEGADA Y SALIDA
                 </button>
                 <button onclick="switchTab('electrodomesticos')" id="tab-electrodomesticos" class="tab-btn px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 whitespace-nowrap inline-flex items-center gap-2 text-slate-500 hover:text-slate-800 hover:bg-slate-100">
-                    <i data-lucide="cpu" class="w-4 h-4"></i> Electrodomésticos
+                    <i data-lucide="cpu" class="w-4 h-4"></i> ELECTRODOMÉSTICOS
                 </button>
                 <button onclick="switchTab('entorno')" id="tab-entorno" class="tab-btn px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 whitespace-nowrap inline-flex items-center gap-2 text-slate-500 hover:text-slate-800 hover:bg-slate-100">
-                    <i data-lucide="compass" class="w-4 h-4"></i> Garrucha y Entorno
+                    <i data-lucide="compass" class="w-4 h-4"></i> GARRUCHA Y ENTORNO
                 </button>
                 <button onclick="switchTab('telefonos')" id="tab-telefonos" class="tab-btn px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 whitespace-nowrap inline-flex items-center gap-2 text-slate-500 hover:text-slate-800 hover:bg-slate-100">
-                    <i data-lucide="phone" class="w-4 h-4"></i> Teléfonos Útiles
+                    <i data-lucide="phone" class="w-4 h-4"></i> TELÉFONOS ÚTILES
                 </button>
             </div>
         </div>
     </nav>
 
-    <!-- MAIN CONTENT -->
     <main class="flex-1 max-w-6xl w-full mx-auto p-4 sm:p-6">
         
-        <!-- SECTION: INICIO / LA CASA -->
         <section id="content-inicio" class="tab-content space-y-6">
-            <!-- Galería de fotos ficticia pero bonita -->
             <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
-                <!-- Foto Principal -->
                 <div class="md:col-span-8 relative rounded-3xl overflow-hidden group shadow-lg h-72 md:h-96 bg-sky-200">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent z-10"></div>
                     <div class="absolute inset-0 flex flex-col justify-end p-6 z-20 text-white">
@@ -170,7 +177,6 @@
                         <h2 class="text-2xl font-serif font-bold">Urbanización amplia</h2>
                         <p class="text-sm text-sky-100">Zonas ajardinadas con piscina y zona de fútbol-tenis.</p>
                     </div>
-                    <!-- Dibujo SVG o Gradiente simulando la urbanización de la foto original -->
                     <div class="absolute inset-0 w-full h-full bg-gradient-to-tr from-[#38bdf8] via-[#0284c7] to-[#075985] flex items-center justify-center">
                         <svg class="w-full h-full opacity-40 absolute" viewBox="0 0 100 100" preserveAspectRatio="none">
                             <path d="M0,50 Q25,30 50,50 T100,50 L100,100 L0,100 Z" fill="#0369a1"></path>
@@ -183,9 +189,7 @@
                     </div>
                 </div>
 
-                <!-- Fotos Secundarias -->
                 <div class="md:col-span-4 grid grid-cols-2 md:grid-cols-1 gap-4">
-                    <!-- Terraza visual -->
                     <div class="relative rounded-2xl overflow-hidden shadow-md h-34 md:h-[11.5rem] bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-white text-center p-4">
                         <div class="absolute inset-0 bg-slate-950/20"></div>
                         <div class="z-10">
@@ -194,7 +198,6 @@
                             <p class="text-xs text-amber-50">Intimidad y luz solar automática</p>
                         </div>
                     </div>
-                    <!-- Garaje visual -->
                     <div class="relative rounded-2xl overflow-hidden shadow-md h-34 md:h-[11.5rem] bg-gradient-to-br from-slate-600 to-slate-800 flex items-center justify-center text-white text-center p-4">
                         <div class="absolute inset-0 bg-slate-950/20"></div>
                         <div class="z-10">
@@ -206,11 +209,9 @@
                 </div>
             </div>
 
-            <!-- DETALLES DE LAS ESTANCIAS -->
-            <h3 class="text-xl font-serif font-bold text-med-800 border-b border-slate-200 pb-2">Distribución de la Casa</h3>
+            <h3 class="text-xl font-serif font-bold text-med-800 border-b border-slate-200 pb-2">Detalles a tener en cuenta el primer dia</h3>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Salón -->
                 <div class="bg-white p-5 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
                     <div class="flex items-center gap-3 mb-3">
                         <div class="p-2.5 bg-blue-50 text-blue-600 rounded-xl">
@@ -219,22 +220,38 @@
                         <h4 class="font-bold text-lg">Salón</h4>
                     </div>
                     <ul class="space-y-2 text-sm text-slate-600">
-                        <li class="flex items-start gap-2">
-                            <span class="text-blue-500 font-bold">•</span>
-                            <span>Sofá cama extraíble (aún un poco durillo para sacarlo).</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-blue-500 font-bold">•</span>
-                            <span><strong>TV Grande Principal:</strong> Con dos mandos. Soporta TDT normal (<code class="bg-slate-100 px-1 rounded text-xs">Source=DVB-T</code>) y canales de pago Movistar (<code class="bg-slate-100 px-1 rounded text-xs">Source=HDMI1</code>) mediante Fire TV.</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-blue-500 font-bold">•</span>
-                            <span><strong>TV Pequeña Portátil:</strong> Con pie móvil, perfecta para sacar a la terraza. Funciona con alargadera y Movistar (Fire TV).</span>
-                        </li>
-                    </ul>
+
+                <ul class="space-y-3 text-sm text-slate-600">
+                    <li class="flex items-start gap-2 bg-slate-50 p-3 rounded-xl border-l-4 border-facebook shadow-sm">
+                        <span class="text-facebook font-bold shrink-0 mt-0.5">•</span>
+                        <span><strong>TV Grande - Canales TDT:</strong> Se ven por la antena habitual seleccionando la fuente <code class="bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded text-xs font-mono font-bold">Source=DVB-T</code> con el <strong>mando grande</strong> de la televisión. Con este mismo mando se controla todo (canales, volumen, etc.).</span>
+                    </li>
+                    
+                    <li class="flex items-start gap-2 bg-slate-50 p-3 rounded-xl border-l-4 border-facebook shadow-sm">
+                        <span class="text-facebook font-bold shrink-0 mt-0.5">•</span>
+                        <span><strong>TV Grande - Canales Movistar:</strong> Se accede seleccionando la fuente <code class="bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded text-xs font-mono font-bold">Source=HDMI1</code>. Una vez dentro, se utiliza el <strong>mando del Fire TV</strong> para controlar la navegación y contenidos, utilizando el mando grande únicamente para encender o apagar la televisión.</span>
+                    </li>
+                    
+                    <li class="flex items-start gap-2 bg-slate-50 p-3 rounded-xl border-l-4 border-facebook shadow-sm">
+                        <span class="text-facebook font-bold shrink-0 mt-0.5">•</span>
+                        <span><strong>TV Pequeña Portátil:</strong> Con pie móvil, perfecta para sacar a la terraza o llevar al dormitorio. Esta TV no lleva antena, sino que va con plataforma de pago tipo Movistar. El <strong>mando grande</strong> controla el encendido/apagado y el volumen. El <strong>mando del Fire TV</strong> controla lo demás, aunque es más lenta (antigua) que la TV principal del salón.</span>
+                    </li>
+                </ul>
+
+                <p class="text-xs text-slate-500 italic mt-3 border-t border-slate-100 pt-2 leading-relaxed">
+                    En ambas TVs podéis iniciar sesión si tenéis alguna plataforma de TV en casa, aunque nosotros os hemos dejado nuestra cuenta operativa para que podáis usarla sin problema.
+                </p>
+
+                <!-- Bloque de advertencia para la restricción de Movistar -->
+                <div class="mt-3 p-3 bg-amber-50 rounded-2xl border border-amber-200 shadow-sm flex items-start gap-2.5 text-xs text-slate-700">
+                    <i data-lucide="alert-circle" class="w-4 h-4 text-amber-600 shrink-0 mt-0.5 animate-pulse"></i>
+                    <div>
+                        <p class="font-bold text-amber-900 mb-0.5">Importante sobre el uso simultáneo:</p>
+                        <p class="leading-relaxed">Lo único que <span class="bg-amber-200/80 px-1 rounded font-bold text-slate-900">no se puede usar Movistar en ambas TVs a la vez</span>. Si por ejemplo los niños quieren ver otra cosa, lo suyo es ver la TV del salón por el TDT de los canales habituales, y la otra TV pequeña por Movistar.</p>
+                    </div>
+                </div>
                 </div>
 
-                <!-- Dormitorio de Matrimonio -->
                 <div class="bg-white p-5 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
                     <div class="flex items-center gap-3 mb-3">
                         <div class="p-2.5 bg-rose-50 text-rose-600 rounded-xl">
@@ -245,20 +262,31 @@
                     <ul class="space-y-2 text-sm text-slate-600">
                         <li class="flex items-start gap-2">
                             <span class="text-rose-500 font-bold">•</span>
-                            <span><strong>Espacio disponible:</strong> Puerta <strong>IZQUIERDA</strong> del armario empotrado.</span>
+                            <span><strong>Armario libre para vuestro uso:</strong> Puerta <strong>IZQUIERDA</strong> del armario empotrado.</span>
                         </li>
+
+                        <!-- NUEVO TIP/CONSEJO: Espacio en los cajones -->
+                        <div class="mt-2.5 p-3 bg-rose-50/60 rounded-2xl border border-rose-100 shadow-sm flex items-start gap-2 text-xs text-slate-600">
+                            <i data-lucide="info" class="w-4 h-4 text-rose-500 shrink-0 mt-0.5 animate-pulse"></i>
+                            <span><strong>ESPACIO:</strong> Una vez coloquéis sábanas y toallas, los cajones liberados los podéis aprovechar para vuestra ropa, así como las perchas superiores.</span>
+                        </div>
                         <li class="flex items-start gap-2">
                             <span class="text-rose-500 font-bold">•</span>
-                            <span><strong>Ropa de cama:</strong> En la cajonera de la puerta izquierda tenéis 2 sets de toallas (baño y manos) y 1 set de sábanas.</span>
+                            <span><strong>Ropa de cama:</strong> En la cajonera de la puerta izquierda tenéis 2 sets de toallas (baño y manos) y 1 set de sábanas. Y en la parte alta del armario, otro set de repuesto para alguna urgencia o imprevisto.</span>
                         </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-rose-500 font-bold">•</span>
-                            <span><strong>Importante:</strong> Aquí se encuentra el <strong>Router</strong>. Por favor, aseguraos de no desconectarlo para mantener el internet activo.</span>
-                        </li>
+                        <!-- NUEVO APARTADO: Tip sombreado para el Router -->
+                        <div class="mt-3 p-3 bg-amber-50 rounded-2xl border border-amber-200 shadow-sm flex items-start gap-2.5 text-xs text-slate-700">
+                            <div class="p-1.5 bg-amber-500/10 rounded-xl text-amber-600 shrink-0 mt-0.5">
+                                <i data-lucide="wifi-off" class="w-4 h-4 animate-pulse"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-amber-900 mb-0.5">Importante:</p>
+                                <p class="leading-relaxed">En la mesa está el <strong>Router</strong>. Por favor, aseguraos de no desconectarlo para mantener el internet activo.</p>
+                            </div>
+                        </div>
                     </ul>
                 </div>
 
-                <!-- Dormitorio 2 Camas -->
                 <div class="bg-white p-5 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
                     <div class="flex items-center gap-3 mb-3">
                         <div class="p-2.5 bg-sky-50 text-sky-600 rounded-xl">
@@ -269,7 +297,7 @@
                     <ul class="space-y-2 text-sm text-slate-600">
                         <li class="flex items-start gap-2">
                             <span class="text-sky-500 font-bold">•</span>
-                            <span><strong>Espacio disponible:</strong> Puerta <strong>DERECHA</strong> del armario.</span>
+                            <span><strong>Espacio libre para vuestro uso:</strong> Puerta <strong>DERECHA</strong> del armario.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-sky-500 font-bold">•</span>
@@ -282,18 +310,17 @@
                     </ul>
                 </div>
 
-                <!-- Dormitorio Literas -->
                 <div class="bg-white p-5 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
                     <div class="flex items-center gap-3 mb-3">
                         <div class="p-2.5 bg-indigo-50 text-indigo-600 rounded-xl">
                             <i data-lucide="baby" class="w-6 h-6"></i>
                         </div>
-                        <h4 class="font-bold text-lg">Dormitorio Literas</h4>
+                        <h4 class="font-bold text-lg">Dormitorio de Literas</h4>
                     </div>
                     <ul class="space-y-2 text-sm text-slate-600">
                         <li class="flex items-start gap-2">
                             <span class="text-indigo-500 font-bold">•</span>
-                            <span><strong>Espacio disponible:</strong> Puerta <strong>DERECHA</strong> del armario.</span>
+                            <span><strong>Espacio libre para vuestro uso:</strong> Puerta <strong>DERECHA</strong> del armario.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-indigo-500 font-bold">•</span>
@@ -302,7 +329,6 @@
                     </ul>
                 </div>
 
-                <!-- Terraza y Climatización -->
                 <div class="bg-white p-5 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
                     <div class="flex items-center gap-3 mb-3">
                         <div class="p-2.5 bg-amber-50 text-amber-600 rounded-xl">
@@ -313,11 +339,23 @@
                     <ul class="space-y-2 text-sm text-slate-600">
                         <li class="flex items-start gap-2">
                             <span class="text-amber-500 font-bold">•</span>
-                            <span><strong>Brisa Natural:</strong> ¡Consejo estrella! Al abrir la puerta del lavadero y la de la terraza se crea una corriente de aire fresquito maravillosa. No suele hacer falta el Aire Acondicionado central.</span>
+                            <span><strong>Noches fabulosas:</strong> Aprovechad al máximo como nosotros la terracita con las vistas al horizonte y la calma de la noche tras un duro día de playa y turismo.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-amber-500 font-bold">•</span>
-                            <span><strong>Iluminación:</strong> Luces solares automáticas con mando propio para desactivarlas si queréis más intimidad.</span>
+                            <span><strong>Brisa Natural:</strong> ¡Consejo estrella! Al abrir la puerta del lavadero y la de la terraza se crea una corriente de aire fresquito maravillosa.</span>
+                        </li>
+                        <div class="mt-3 p-3 bg-blue-50/60 rounded-2xl border border-blue-100 shadow-sm flex items-start gap-2 text-xs text-slate-600">
+                            <i data-lucide="snowflake" class="w-4 h-4 text-facebook shrink-0 mt-0.5 animate-pulse"></i>
+                            <span>Por supuesto, también podéis usar el aire acondicionado centralizado si el calor aprieta.</span>
+                        </div>
+                        <li class="flex items-start gap-2">
+                            <span class="text-amber-500 font-bold">•</span>
+                            <span><strong>Toldo:</strong> Muy útil al mediodía para ampliar el espacio de sombra en la terraza.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-amber-500 font-bold">•</span>
+                            <span><strong>Iluminación:</strong> Tiene iluminación eléctrica con interruptor dentro del salón, y aparte luces solares con mando propio para desactivarlas si queréis más intimidad.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-amber-500 font-bold">•</span>
@@ -326,7 +364,22 @@
                     </ul>
                 </div>
 
-                <!-- Cocina y Nevera de Bienvenida -->
+                <div class="bg-white p-5 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="p-2.5 bg-purple-50 text-purple-600 rounded-xl">
+                            <i data-lucide="dices" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="font-bold text-lg">Juegos de mesa</h4>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-3">
+                        En el mueble habrá algunos juegos de mesa que podéis usar.
+                    </p>
+                    <div class="p-3 bg-purple-50/50 rounded-2xl text-xs text-purple-800 flex items-start gap-2">
+                        <i data-lucide="smile" class="w-4 h-4 text-purple-600 shrink-0"></i>
+                        <span>¡Por favor, aseguraos de guardar todas las fichas al terminar para el siguiente invitado!</span>
+                    </div>
+                </div>
+                
                 <div class="bg-white p-5 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
                     <div class="flex items-center gap-3 mb-3">
                         <div class="p-2.5 bg-emerald-50 text-emerald-600 rounded-xl">
@@ -342,13 +395,12 @@
                         <span>Los estropajos y bayetas del lavadero están a estrenar para vuestra comodidad.</span>
                     </div>
                 </div>
+
             </div>
         </section>
 
-        <!-- SECTION: REGISTRO / LLEGADA Y SALIDA -->
         <section id="content-registro" class="tab-content hidden space-y-6">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Check-in -->
                 <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100">
                     <div class="flex items-center gap-3 mb-5 pb-3 border-b border-slate-100">
                         <div class="p-3 bg-blue-100 text-blue-700 rounded-2xl">
@@ -361,10 +413,9 @@
                     </div>
 
                     <div class="space-y-6 relative border-l border-slate-200 pl-4 ml-3">
-                        <!-- Paso 1 -->
                         <div class="relative">
                             <span class="absolute -left-[25px] top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-blue-500 ring-4 ring-white"></span>
-                            <h4 class="font-bold text-sm text-slate-800">1. Recoger las llaves</h4>
+                            <h4 class="font-bold text-sm text-slate-800">1. Recoger las llaves de la casa y la urbanización</h4>
                             <p class="text-xs text-slate-600 mt-1">
                                 Están en un candado de seguridad en una valla cercana a la puerta de entrada de la urbanización. 
                                 <em>Os enviaré por WhatsApp su localización exacta y un vídeo explicativo.</em>
@@ -375,7 +426,6 @@
                             </div>
                         </div>
 
-                        <!-- Paso 2 -->
                         <div class="relative">
                             <span class="absolute -left-[25px] top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-blue-500 ring-4 ring-white"></span>
                             <h4 class="font-bold text-sm text-slate-800">2. Alarma Prosegur</h4>
@@ -384,7 +434,6 @@
                             </p>
                         </div>
 
-                        <!-- Paso 3 -->
                         <div class="relative">
                             <span class="absolute -left-[25px] top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-blue-500 ring-4 ring-white"></span>
                             <h4 class="font-bold text-sm text-slate-800">3. Llaves de garaje, piscina y mando</h4>
@@ -404,12 +453,11 @@
                             </div>
                         </div>
 
-                        <!-- Paso 4 -->
                         <div class="relative">
                             <span class="absolute -left-[25px] top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-blue-500 ring-4 ring-white"></span>
                             <h4 class="font-bold text-sm text-slate-800">4. Aparcar el Coche</h4>
                             <p class="text-xs text-slate-600 mt-1">
-                                Bajad en el ascensor junto a la puerta hasta la <strong>Planta -1</strong>. Nuestra plaza es la <strong>Nº 70</strong>. 
+                                Bajad en el ascensor de enfrente de la puerta del piso hasta la <strong>Planta -1</strong>. Nuestra plaza es la <strong>Nº 70</strong>. 
                             </p>
                             <p class="text-xs text-slate-600 mt-1 font-semibold">
                                 Nota: El mando tiene 2 botones, ya que hay 2 puertas consecutivas que se abren para salir a la calle.
@@ -418,7 +466,6 @@
                     </div>
                 </div>
 
-                <!-- Check-out -->
                 <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between">
                     <div>
                         <div class="flex items-center gap-3 mb-5 pb-3 border-b border-slate-100">
@@ -458,24 +505,26 @@
                                     </div>
                                     <div>
                                         <h5 class="font-bold text-sm text-slate-800">Candado de Entrada</h5>
-                                        <p class="text-xs text-slate-600">Dejad las llaves del piso y la urbanización en el candado del exterior, cerradlo bien y cambiad los dígitos.</p>
+                                        <p class="text-xs text-slate-600">Dejad las llaves del piso y la urbanización en el candado del exterior, cerradlo bien y poned dígitos aleatorios.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="mt-8 pt-5 border-t border-slate-100 text-center">
-                        <p class="font-serif italic text-med-800 text-base">
-                            "Esperamos de corazón que disfrutéis de nuestra casa y de Garrucha tanto como lo hacemos nosotros."
+                    <!-- APARTADO: Despedida final con tamaño aumentado y resaltado de fondo -->
+                    <div class="mt-10 pt-8 border-t border-slate-200/60 text-center bg-gradient-to-b from-transparent to-med-50/40 p-6 rounded-3xl shadow-sm">
+                        <p class="font-serif italic text-med-900 text-xl leading-relaxed max-w-2xl mx-auto">
+                            "Esperamos de corazón que disfrutéis de la casa y de Garrucha tanto como lo hacemos nosotros."
                         </p>
-                        <p class="text-xs text-slate-400 mt-1">— Lina y Antonio</p>
+                        <p class="text-sm text-slate-500 font-semibold tracking-wide mt-3 flex items-center justify-center gap-1.5">
+                            <span class="text-facebook">—</span> Lina y Antonio <span class="text-facebook">—</span>
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION: GUÍA DE APARATOS -->
         <section id="content-electrodomesticos" class="tab-content hidden space-y-6">
             <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100">
                 <div class="flex items-center gap-3 mb-4">
@@ -488,13 +537,20 @@
                     </div>
                 </div>
                 <p class="text-sm text-slate-600 mb-6">
-                    En el mueble izquierdo del salón hay una <strong>caja blanca</strong> donde guardamos todos los manuales físicos. Aquí tenéis un resumen muy práctico de los principales aparatos:
+                    En el mueble izquierdo del salón hay una <strong>caja blanca</strong> donde guardamos algunos manuales en papel, aunque aquí tenéis un resumen muy práctico de los principales aparatos.
                 </p>
 
-                <!-- Acordeón interactivo -->
+                <div class="mb-5 p-2 px-3 bg-emerald-50/50 rounded-xl border border-emerald-100 shadow-sm inline-flex items-center gap-2 text-xs text-emerald-900">
+                    <div class="p-1 bg-emerald-500/10 rounded-lg text-emerald-600 shrink-0">
+                        <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
+                    </div>
+                    <p>
+                        Cualquier duda, no dudéis en escribirnos por <strong>WhatsApp</strong>.
+                    </p>
+                </div>
+
                 <div class="space-y-3">
 
-                <!-- Aire acondicionado -->
                     <div class="border border-slate-100 rounded-2xl overflow-hidden shadow-sm">
                         <button onclick="toggleAccordion('acc-aire')" class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 transition-colors text-left">
                             <span class="font-semibold text-sm flex items-center gap-2">
@@ -508,7 +564,6 @@
                         </div>
                     </div>
                     
-                    <!-- Calentador de agua -->
                     <div class="border border-slate-100 rounded-2xl overflow-hidden shadow-sm">
                         <button onclick="toggleAccordion('acc-calentador')" class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 transition-colors text-left">
                             <span class="font-semibold text-sm flex items-center gap-2">
@@ -522,11 +577,10 @@
                         </div>
                     </div>
 
-                    <!-- Freidora de aire -->
                     <div class="border border-slate-100 rounded-2xl overflow-hidden shadow-sm">
                         <button onclick="toggleAccordion('acc-freidora')" class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 transition-colors text-left">
                             <span class="font-semibold text-sm flex items-center gap-2">
-                                <i data-lucide="wind" class="w-4.5 h-4.5 text-sky-500"></i> Freidora de Aire (Orbegozo)
+                                <i data-lucide="wind" class="w-4.5 h-4.5 text-sky-500"></i> Freidora de Aire
                             </span>
                             <i id="icon-acc-freidora" data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200"></i>
                         </button>
@@ -535,20 +589,18 @@
                         </div>
                     </div>
 
-                    <!-- Lavadora -->
                     <div class="border border-slate-100 rounded-2xl overflow-hidden shadow-sm">
                         <button onclick="toggleAccordion('acc-lavadora')" class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 transition-colors text-left">
                             <span class="font-semibold text-sm flex items-center gap-2">
-                                <i data-lucide="pocket" class="w-4.5 h-4.5 text-indigo-500"></i> Lavadora
+                                <i data-lucide="washing-machine" class="w-4.5 h-4.5 text-indigo-500"></i> Lavadora
                             </span>
                             <i id="icon-acc-lavadora" data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200"></i>
                         </button>
                         <div id="acc-lavadora" class="hidden p-4 bg-white border-t border-slate-100 text-xs text-slate-600 space-y-2">
-                            <p><strong>Fácil de operar:</strong> Lo más cómodo y rápido es girar la rueda para programar por tiempo. El lavado es automático.</p>
+                            <p><strong>Fácil de operar:</strong> Lo más cómodo y rápido es girar la rueda para programar por tiempo. El lavado es automatico.</p>
                         </div>
                     </div>
 
-                    <!-- Horno -->
                     <div class="border border-slate-100 rounded-2xl overflow-hidden shadow-sm">
                         <button onclick="toggleAccordion('acc-horno')" class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 transition-colors text-left">
                             <span class="font-semibold text-sm flex items-center gap-2">
@@ -561,7 +613,6 @@
                         </div>
                     </div>
 
-                    <!-- Plancha Grill y Tostadora -->
                     <div class="border border-slate-100 rounded-2xl overflow-hidden shadow-sm">
                         <button onclick="toggleAccordion('acc-plancha')" class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 transition-colors text-left">
                             <span class="font-semibold text-sm flex items-center gap-2">
@@ -575,7 +626,6 @@
                         </div>
                     </div>
 
-                    <!-- Campana Extractora -->
                     <div class="border border-slate-100 rounded-2xl overflow-hidden shadow-sm">
                         <button onclick="toggleAccordion('acc-campana')" class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 transition-colors text-left">
                             <span class="font-semibold text-sm flex items-center gap-2">
@@ -588,7 +638,6 @@
                         </div>
                     </div>
 
-                    <!-- Lavavajillas -->
                     <div class="border border-slate-100 rounded-2xl overflow-hidden shadow-sm">
                         <button onclick="toggleAccordion('acc-lavavajillas')" class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 transition-colors text-left">
                             <span class="font-semibold text-sm flex items-center gap-2">
@@ -605,12 +654,10 @@
             </div>
         </section>
 
-        <!-- SECTION: ENTORNO / GARRUCHA -->
         <section id="content-entorno" class="tab-content hidden space-y-6">
             
-            <!-- Sub Navegación del entorno -->
             <div class="flex gap-2 border-b border-slate-200 pb-3 overflow-x-auto custom-scrollbar">
-                <button onclick="switchSubTab('comer')" id="subtab-comer" class="subtab-btn px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap bg-med-600 text-white">
+                <button onclick="switchSubTab('comer')" id="subtab-comer" class="subtab-btn px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap bg-facebook text-white">
                     🍽️ Gastronomía
                 </button>
                 <button onclick="switchSubTab('playas')" id="subtab-playas" class="subtab-btn px-4 py-2 rounded-lg text-xs font-medium whitespace-nowrap text-slate-600 bg-white hover:bg-slate-100">
@@ -619,12 +666,14 @@
                 <button onclick="switchSubTab('compras')" id="subtab-compras" class="subtab-btn px-4 py-2 rounded-lg text-xs font-medium whitespace-nowrap text-slate-600 bg-white hover:bg-slate-100">
                     🛒 Compras
                 </button>
+                <button onclick="switchSubTab('paseo')" id="subtab-paseo" class="subtab-btn px-4 py-2 rounded-lg text-xs font-medium whitespace-nowrap text-slate-600 bg-white hover:bg-slate-100">
+                    🌊 Paseo marítimo
+                </button>
                 <button onclick="switchSubTab('transporte')" id="subtab-transporte" class="subtab-btn px-4 py-2 rounded-lg text-xs font-medium whitespace-nowrap text-slate-600 bg-white hover:bg-slate-100">
-                    🚌 Transporte y Paseo
+                    🚌 Transporte
                 </button>
             </div>
 
-            <!-- SUB TAB: COMER -->
             <div id="sub-comer" class="sub-content space-y-4">
                 <div class="p-4 bg-white rounded-3xl shadow-sm border border-slate-100">
                     <p class="text-sm text-slate-600">
@@ -633,7 +682,6 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <!-- Boracay Beach -->
                     <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:border-sky-300 transition-all flex flex-col justify-between">
                         <div>
                             <h4 class="font-bold text-sm text-slate-800">Boracay Beach Restaurante</h4>
@@ -643,9 +691,9 @@
                            class="mt-3 inline-flex items-center justify-center gap-1.5 py-2 px-3 bg-sky-50 text-sky-700 hover:bg-sky-100 rounded-xl text-xs font-bold transition-colors">
                             <i data-lucide="map" class="w-3.5 h-3.5"></i> Ver en Google Maps
                         </a>
+                        
                     </div>
 
-                    <!-- Mesón del Pescador -->
                     <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:border-sky-300 transition-all flex flex-col justify-between">
                         <div>
                             <h4 class="font-bold text-sm text-slate-800">Mesón del Pescador</h4>
@@ -657,7 +705,6 @@
                         </a>
                     </div>
 
-                    <!-- Rincón del Puerto -->
                     <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:border-sky-300 transition-all flex flex-col justify-between">
                         <div>
                             <h4 class="font-bold text-sm text-slate-800">Rincón del Puerto</h4>
@@ -669,7 +716,6 @@
                         </a>
                     </div>
 
-                    <!-- La Trattoria da Marco -->
                     <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:border-sky-300 transition-all flex flex-col justify-between">
                         <div>
                             <h4 class="font-bold text-sm text-slate-800">La Trattoria da Marco</h4>
@@ -681,7 +727,6 @@
                         </a>
                     </div>
 
-                    <!-- Freiduría Marina -->
                     <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:border-sky-300 transition-all flex flex-col justify-between">
                         <div>
                             <h4 class="font-bold text-sm text-slate-800">Freiduría Marina</h4>
@@ -693,7 +738,6 @@
                         </a>
                     </div>
 
-                    <!-- Cafetería La Yaya -->
                     <div class="bg-white p-4 rounded-2xl shadow-sm border border-rose-100 hover:border-rose-300 transition-all flex flex-col justify-between bg-rose-50/10">
                         <div>
                             <div class="flex items-center justify-between">
@@ -708,7 +752,6 @@
                         </a>
                     </div>
 
-                    <!-- Chiringuito Hermanos Moreno -->
                     <div class="bg-white p-4 rounded-2xl shadow-sm border border-amber-100 hover:border-amber-300 transition-all flex flex-col justify-between bg-amber-50/5">
                         <div>
                             <h4 class="font-bold text-sm text-slate-800">Chiringuito Hermanos Moreno</h4>
@@ -720,7 +763,6 @@
                         </div>
                     </div>
 
-                    <!-- Marau Beach -->
                     <div class="bg-white p-4 rounded-2xl shadow-sm border border-sky-100 hover:border-sky-300 transition-all flex flex-col justify-between bg-sky-50/20">
                         <div>
                             <div class="flex items-center justify-between">
@@ -735,7 +777,6 @@
                         </a>
                     </div>
 
-                    <!-- Mojácar Pueblo -->
                     <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:border-sky-300 transition-all flex flex-col justify-between">
                         <div>
                             <h4 class="font-bold text-sm text-slate-800">Mojácar Pueblo</h4>
@@ -747,7 +788,6 @@
                         </div>
                     </div>
 
-                    <!-- Restaurante Neptuno -->
                     <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:border-sky-300 transition-all flex flex-col justify-between">
                         <div>
                             <h4 class="font-bold text-sm text-slate-800">Restaurante Neptuno</h4>
@@ -759,7 +799,6 @@
                         </a>
                     </div>
 
-                    <!-- Fiesta en Mojácar -->
                     <div class="bg-white p-4 rounded-2xl shadow-sm border border-purple-100 hover:border-purple-300 transition-all flex flex-col justify-between bg-purple-50/10">
                         <div>
                             <div class="flex items-center justify-between">
@@ -774,7 +813,6 @@
                         </a>
                     </div>
 
-                    <!-- Manhattan Crepes -->
                     <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:border-sky-300 transition-all flex flex-col justify-between">
                         <div>
                             <h4 class="font-bold text-sm text-slate-800">Cafetería Manhattan</h4>
@@ -785,7 +823,6 @@
                         </span>
                     </div>
 
-                    <!-- Chiringuito El Espigón -->
                     <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:border-sky-300 transition-all flex flex-col justify-between">
                         <div>
                             <h4 class="font-bold text-sm text-slate-800">Chiringuito El Espigón</h4>
@@ -799,21 +836,18 @@
                 </div>
             </div>
 
-            <!-- SUB TAB: PLAYAS -->
             <div id="sub-playas" class="sub-content hidden space-y-4">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <!-- Playa Garrucha -->
                     <div class="bg-white p-5 rounded-3xl shadow-sm border border-slate-100">
                         <div class="flex items-center gap-2 mb-2">
                             <span class="p-1.5 bg-sky-50 text-sky-600 rounded-lg"><i data-lucide="umbrella" class="w-4 h-4"></i></span>
-                            <h4 class="font-bold text-base text-slate-800">Playa Principal de Garrucha</h4>
+                            <h4 class="font-bold text-base text-slate-800">Playa urbana de Garrucha</h4>
                         </div>
                         <p class="text-xs text-slate-600 leading-relaxed">
-                            Se va andando desde casa en solo <strong>6-7 minutos</strong>. Al volver, la cuesta puede hacer que tardéis unos 10-12 minutos dependiendo de la edad. Es una playa muy limpia y calmada.
+                            Se va andando desde casa en solo <strong>6-7 minutos</strong>. Al volver, la cuesta puede que tardéis unos 10-12 minutos dependiendo de la edad. Es una playa muy limpia y calmada.
                         </p>
                     </div>
 
-                    <!-- Playa del Boracay -->
                     <div class="bg-white p-5 rounded-3xl shadow-sm border border-slate-100">
                         <div class="flex items-center gap-2 mb-2">
                             <span class="p-1.5 bg-sky-50 text-sky-600 rounded-lg"><i data-lucide="car" class="w-4 h-4"></i></span>
@@ -824,23 +858,21 @@
                         </p>
                     </div>
 
-                    <!-- Playas de Vera y Mojácar -->
                     <div class="bg-white p-5 rounded-3xl shadow-sm border border-slate-100">
                         <div class="flex items-center gap-2 mb-2">
                             <span class="p-1.5 bg-amber-50 text-amber-600 rounded-lg"><i data-lucide="map-pin" class="w-4 h-4"></i></span>
                             <h4 class="font-bold text-base text-slate-800">Vera y Mojácar</h4>
                         </div>
                         <p class="text-xs text-slate-600 leading-relaxed">
-                            <strong>Vera (a pocos mins en coche):</strong> Playas inmensas de fácil aparcamiento. Ideales para jugar con olas. <br>
-                            <strong>Mojácar (Hotel Indalo):</strong> Arena fina y agradable, no cubre hasta muy adentro, idónea para los niños.
+                            <strong>Vera:</strong> a pocos minutos en coche), con playas inmensas sin mucho problema de aparcamiento. Ideales para jugar con olas. <br>
+                            <strong>Mojácar: </strong> en especial la playa frente al Hotel Indalo, arena fina y agradable, no cubre hasta muy adentro, idónea para los niños.
                         </p>
                     </div>
 
-                    <!-- Escapadas Cabo de Gata -->
                     <div class="bg-sky-50 p-5 rounded-3xl shadow-sm border border-sky-100">
                         <div class="flex items-center gap-2 mb-2">
                             <span class="p-1.5 bg-sky-100 text-sky-700 rounded-lg"><i data-lucide="sparkles" class="w-4 h-4"></i></span>
-                            <h4 class="font-bold text-base text-sky-900">Joyas imperdibles de Cabo de Gata</h4>
+                            <h4 class="font-bold text-base text-sky-900">Cabo de Gata: joyas que no te puedes perder</h4>
                         </div>
                         <p class="text-xs text-sky-800 leading-relaxed mb-2">
                             Si disponéis de un día libre, no dejéis de visitar en coche:
@@ -854,10 +886,8 @@
                 </div>
             </div>
 
-            <!-- SUB TAB: COMPRAS -->
             <div id="sub-compras" class="sub-content hidden space-y-4">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <!-- Alimentación -->
                     <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm space-y-3">
                         <div class="flex items-center gap-2 text-slate-800 font-bold text-sm">
                             <i data-lucide="shopping-cart" class="w-5 h-5 text-emerald-600"></i> Supermercados
@@ -869,7 +899,6 @@
                         </div>
                     </div>
 
-                    <!-- Tiendas tradicionales -->
                     <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm space-y-3">
                         <div class="flex items-center gap-2 text-slate-800 font-bold text-sm">
                             <i data-lucide="shopping-bag" class="w-5 h-5 text-amber-600"></i> Compras Locales
@@ -879,7 +908,6 @@
                         </div>
                     </div>
 
-                    <!-- Bazares / Varios -->
                     <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm space-y-3">
                         <div class="flex items-center gap-2 text-slate-800 font-bold text-sm">
                             <i data-lucide="clock" class="w-5 h-5 text-blue-600"></i> Urgencias / Bazares
@@ -892,11 +920,22 @@
                 </div>
             </div>
 
-            <!-- SUB TAB: TRANSPORTE -->
+            <div id="sub-paseo" class="sub-content hidden space-y-4">
+                <div class="bg-white p-5 rounded-3xl border border-slate-100 shadow-sm space-y-4">
+                    <div class="p-3 bg-amber-50 rounded-xl border border-amber-100 text-amber-900">
+                        <h5 class="font-bold mb-1 flex items-center gap-1">
+                            <i data-lucide="sparkles" class="w-4 h-4"></i> Paseo del Malecón
+                        </h5>
+                        <p class="text-xs">
+                            Dar un paseo temprano por la mañana junto a la barandilla de mármol del Malecón de Garrucha es una de las experiencias más bonitas y tranquilas de las vacaciones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
             <div id="sub-transporte" class="sub-content hidden space-y-4">
                 <div class="bg-white p-5 rounded-3xl border border-slate-100 shadow-sm space-y-4">
                     <h4 class="font-serif font-bold text-lg text-slate-800">Transporte y Movilidad</h4>
-                    
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs text-slate-600">
                         <div class="space-y-3">
                             <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
@@ -923,12 +962,6 @@
                                 </h5>
                                 <p>El aeropuerto de Almería está a unos <strong>55 min en coche</strong> (o 1h 15m en autobús de línea).</p>
                             </div>
-                            <div class="p-3 bg-amber-50 rounded-xl border border-amber-100 text-amber-900">
-                                <h5 class="font-bold mb-1 flex items-center gap-1">
-                                    <i data-lucide="sparkles" class="w-4 h-4"></i> Paseo del Malecón
-                                </h5>
-                                <p>Dar un paseo temprano por la mañana junto a la barandilla de mármol del Malecón de Garrucha es una de las experiencias más bonitas y tranquilas de las vacaciones.</p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -936,7 +969,6 @@
 
         </section>
 
-        <!-- SECTION: TELÉFONOS ÚTILES -->
         <section id="content-telefonos" class="tab-content hidden space-y-6">
             <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100">
                 <div class="flex items-center gap-3 mb-5">
@@ -951,7 +983,6 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     
-                    <!-- EMERGENCIAS Y SEGURIDAD -->
                     <div class="space-y-3">
                         <h4 class="font-bold text-xs uppercase tracking-wider text-rose-600 flex items-center gap-1">
                             🚨 Emergencias y Seguridad
@@ -976,7 +1007,6 @@
                         </div>
                     </div>
 
-                    <!-- SANIDAD Y SALUD -->
                     <div class="space-y-3">
                         <h4 class="font-bold text-xs uppercase tracking-wider text-emerald-600 flex items-center gap-1">
                             🏥 Sanidad y Salud
@@ -1004,7 +1034,6 @@
                         </div>
                     </div>
 
-                    <!-- TRANSPORTE Y TURISMO -->
                     <div class="space-y-3">
                         <h4 class="font-bold text-xs uppercase tracking-wider text-sky-600 flex items-center gap-1">
                             🚖 Transporte y Servicios
@@ -1035,7 +1064,6 @@
 
     </main>
 
-    <!-- FOOTER -->
     <footer class="bg-slate-900 text-slate-400 text-xs py-6 mt-12 border-t border-slate-800">
         <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-3">
             <p>© 2026 La Casa de Lina y Antonio. Creado con ❤️ para nuestros invitados de Home Exchange.</p>
@@ -1043,13 +1071,11 @@
         </div>
     </footer>
 
-    <!-- NOTIFICATION SYSTEM (No Alerts) -->
     <div id="toast" class="fixed bottom-5 right-5 bg-slate-900 text-white px-4 py-3 rounded-2xl shadow-xl flex items-center gap-2 transform translate-y-20 opacity-0 transition-all duration-300 z-50 text-xs font-semibold">
         <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
         <span id="toast-message">Texto copiado con éxito</span>
     </div>
 
-    <!-- SCRIPTS -->
     <script>
         // Initialize Lucide Icons
         lucide.createIcons();
@@ -1070,7 +1096,8 @@
             
             // Set current button active
             const activeBtn = document.getElementById('tab-' + tabId);
-            activeBtn.className = "tab-btn px-4 py-2.5 rounded-xl text-sm font-bold transition-all duration-200 whitespace-nowrap inline-flex items-center gap-2 bg-med-50 text-med-600";
+            // CAMBIO: Al activar la pestaña, se le asigna el color Facebook
+            activeBtn.className = "tab-btn px-4 py-2.5 rounded-xl text-sm font-bold transition-all duration-200 whitespace-nowrap inline-flex items-center gap-2 bg-facebook-50 text-facebook";
         }
 
         // Switch Sub-tabs (Local guide)
@@ -1089,7 +1116,8 @@
 
             // Set active button
             const activeSubBtn = document.getElementById('subtab-' + subTabId);
-            activeSubBtn.className = "subtab-btn px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap bg-med-600 text-white";
+            // CAMBIO: Subpestaña activa pintada con el color Facebook
+            activeSubBtn.className = "subtab-btn px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap bg-facebook text-white";
         }
 
         // Accordion functionality
