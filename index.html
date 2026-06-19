@@ -145,9 +145,9 @@
     </header>
 
     <nav class="sticky top-0 bg-white/95 backdrop-blur-md border-b border-slate-200 z-40 shadow-sm">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex overflow-x-auto gap-1 py-3 custom-scrollbar">
-                <button onclick="switchTab('inicio')" id="tab-inicio" class="tab-btn px-4 py-2.5 rounded-xl text-sm font-bold transition-all duration-200 whitespace-nowrap inline-flex items-center gap-2 bg-facebook-50 text-facebook">
+        <div class="max-w-6xl mx-auto px-4 relative group">
+            
+            <div class="flex overflow-x-auto gap-1 py-3 custom-scrollbar pr-12"> <button onclick="switchTab('inicio')" id="tab-inicio" class="tab-btn px-4 py-2.5 rounded-xl text-sm font-bold transition-all duration-200 whitespace-nowrap inline-flex items-center gap-2 bg-facebook-50 text-facebook">
                     <i data-lucide="home" class="w-4 h-4"></i> La Casa
                 </button>
                 <button onclick="switchTab('registro')" id="tab-registro" class="tab-btn px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 whitespace-nowrap inline-flex items-center gap-2 text-slate-500 hover:text-slate-800 hover:bg-slate-100">
@@ -157,12 +157,14 @@
                     <i data-lucide="cpu" class="w-4 h-4"></i> Electrodomésticos
                 </button>
                 <button onclick="switchTab('entorno')" id="tab-entorno" class="tab-btn px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 whitespace-nowrap inline-flex items-center gap-2 text-slate-500 hover:text-slate-800 hover:bg-slate-100">
-                    <i data-lucide="compass" class="w-4 h-4"></i> Garrucha y entorno
+                    <i data-lucide="compass" class="w-4 h-4"></i> Garrucha y Entorno
                 </button>
                 <button onclick="switchTab('telefonos')" id="tab-telefonos" class="tab-btn px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 whitespace-nowrap inline-flex items-center gap-2 text-slate-500 hover:text-slate-800 hover:bg-slate-100">
-                    <i data-lucide="phone" class="w-4 h-4"></i> Teléfonos útiles
+                    <i data-lucide="phone" class="w-4 h-4"></i> Teléfonos Útiles
                 </button>
             </div>
+
+            <div class="pointer-events-none absolute right-4 top-0 bottom-0 w-12 bg-gradient-to-l from-white via-white/70 to-transparent sm:hidden"></div>
         </div>
     </nav>
 
