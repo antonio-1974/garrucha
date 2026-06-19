@@ -473,12 +473,22 @@
                         </div>
                     </div>
 
-                    <div class="mt-10 pt-6 border-t border-slate-100 text-center">
-                        <p class="font-serif italic text-med-800 text-lg">
-                            "Esperamos que hayáis disfrutado de nuestra casa y de Garrucha al máximo."
-                        </p>
-                        <p class="text-xs sm:text-sm text-slate-400 mt-2">— Lina y Antonio</p>
+                    <div class="mt-14 pt-10 border-t border-slate-100 text-center relative max-w-3xl mx-auto">
+                        <div class="inline-flex p-3 bg-amber-50 rounded-2xl text-amber-500 mb-5 shadow-sm border border-amber-100/50">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="sparkles" class="lucide lucide-sparkles w-6 h-6"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275Z"></path><path d="m5 3 1 2.5L8.5 6 6 7 5 9.5 4 7 1.5 6 4 5.5Z"></path><path d="m19 17 1 2.5 2.5.5-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1Z"></path></svg>
+                        </div>
+                        
+                        <div class="relative px-6">
+                            <span class="absolute -top-6 left-0 text-7xl font-serif text-slate-200/70 select-none">“</span>
+                            <p class="font-serif italic text-cyan-900 text-xl sm:text-2.5xl leading-relaxed tracking-wide">
+                                Esperamos que hayáis disfrutado de nuestra casa y de Garrucha al máximo.
+                            </p>
+                            <span class="absolute -bottom-10 right-0 text-7xl font-serif text-slate-200/70 select-none">”</span>
+                        </div>
+                        
+                        <p class="text-sm sm:text-base font-medium text-slate-400 mt-8 tracking-widest uppercase">— Lina y Antonio —</p>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -495,85 +505,125 @@
                         <p class="text-sm text-slate-500">Manuales rápidos y trucos de uso en la casa</p>
                     </div>
                 </div>
-                <p class="text-slate-600 mb-6 text-base sm:text-lg leading-relaxed">
-                    Tenemos muchos de los manuales en papel en una <strong>caja blanca</strong> dentro del mueble de madera izquierdo del salón, pero más fácil con estas pequeñas instrucciones:
+                <p class="text-slate-600 mb-6 text-xs sm:text-sm leading-relaxed">
+                    Tenemos algunos de los manuales en papel en una <strong>caja blanca</strong> dentro del mueble de madera izquierdo del salón, pero más fácil con estas pequeñas instrucciones:
                 </p>
 
-                <!-- Acordeones -->
-                <div class="space-y-4">
+                <div class="mb-5 p-2.5 px-4 bg-emerald-50/60 rounded-2xl border border-emerald-100 shadow-sm inline-flex items-center gap-3 text-sm text-emerald-900">
+                    <div class="flex items-center gap-1 shrink-0">
+                        <div class="p-1.5 bg-emerald-500/15 rounded-lg text-emerald-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-emerald-500/80 animate-pulse">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </div>
+                    <p class="leading-relaxed">
+                        Cualquier duda, no dudéis en escribirnos por <strong class="text-emerald-950 font-bold">WhatsApp</strong>.
+                    </p>
+                </div>
+
+                <!-- Acordeones -->           
+                <div class="space-y-3">
+
+                    <div class="border border-slate-100 rounded-2xl overflow-hidden shadow-sm">
+                        <button onclick="toggleAccordion('acc-aire')" class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 transition-colors text-left">
+                            <span class="font-semibold text-base flex items-center gap-2">
+                                <i data-lucide="flame" class="w-5 h-5 text-amber-500"></i> Aire Acondicionado
+                            </span>
+                            <i id="icon-acc-aire" data-lucide="chevron-down" class="w-4.5 h-4.5 transition-transform duration-200"></i>
+                        </button>
+                        <div id="acc-aire" class="hidden p-4 bg-white border-t border-slate-100 text-sm text-slate-600 space-y-2">
+                            <p><strong>Configuración:</strong> En el salón está el termostato que es como todos ON/OFF el botón amarillo. No se puede poner por habitaciones, sino que es común para toda la casa. Está en modo verano, por lo que en principio no es necesario ni abrir la tapa.</p>
+                            <p><strong>Consejo:</strong> Salvo días de calor intenso, nosotros solemos abrir la puerta del lavadero y genera un brisa muy agradable con la terraza que nos resulta más natural que el efecto del aire acondicionado.</p>
+                        </div>
+                    </div>
                     
-                    <!-- Calentador -->
-                    <div class="border border-slate-150 rounded-2xl overflow-hidden shadow-sm">
-                        <button onclick="toggleAccordion('acc-calentador')" class="w-full flex justify-between items-center p-5 bg-slate-50 hover:bg-slate-100 transition-colors text-left">
-                            <span class="font-bold text-base sm:text-lg flex items-center gap-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="flame" aria-hidden="true" class="lucide lucide-flame w-5 h-5 text-amber-500"><path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"></path></svg> Calentador de Agua
+                    <div class="border border-slate-100 rounded-2xl overflow-hidden shadow-sm">
+                        <button onclick="toggleAccordion('acc-calentador')" class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 transition-colors text-left">
+                            <span class="font-semibold text-base flex items-center gap-2">
+                                <i data-lucide="flame" class="w-5 h-5 text-amber-500"></i> Calentador & Agua Caliente
                             </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" aria-hidden="true" id="icon-acc-calentador" class="lucide lucide-chevron-down w-5 h-5 transition-transform duration-200"><path d="m6 9 6 6 6-6"></path></svg>
+                            <i id="icon-acc-calentador" data-lucide="chevron-down" class="w-4.5 h-4.5 transition-transform duration-200"></i>
                         </button>
-                        <div id="acc-calentador" class="hidden p-5 bg-white border-t border-slate-150 text-slate-600 space-y-3">
-                            <div class="md:flex gap-6 items-center">
-                                <div class="md:w-2/3 space-y-2 text-sm sm:text-base">
-                                    <p><strong>Ubicación:</strong> Lavadero de la cocina.</p>
-                                    <p><strong>Truco:</strong> Como la tubería recorre bastante distancia desde el lavadero hasta los baños, el agua caliente tardará un pelín en llegar. Dadle un poco de tiempo al abrir el grifo.</p>
-                                    <p><strong>Comprobación:</strong> Antes de meteros en la ducha, os sugerimos verificar en el lavadero que la pantalla digital del termo esté encendida. Si está inactiva, pulsad el botón táctil de <span class="bg-slate-150 px-1.5 py-0.5 rounded font-bold text-slate-800 text-xs">ON</span>.</p>
-                                </div>
-                                <div class="md:w-1/3 mt-4 md:mt-0">
-                                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&amp;fit=crop&amp;w=300&amp;q=80" alt="Termo" class="w-full h-40 object-cover rounded-xl shadow-sm">
-                                </div>
-                            </div>
+                        <div id="acc-calentador" class="hidden p-4 bg-white border-t border-slate-100 text-sm text-slate-600 space-y-2">
+                            <p><strong>Ubicación:</strong> Lavadero.</p>
+                            <p><strong>Antes de usar:</strong> El agua caliente recorre un tramo largo desde el lavadero. Tened un poquito de paciencia. Si notáis que sale fría, id al lavadero y confirmad que el calentador está encendido (si está apagado, solo pulsad el botón de <span class="bg-slate-100 px-1.5 py-0.5 rounded font-bold text-xs">ON</span>).</p>
                         </div>
                     </div>
 
-                    <!-- Freidora de aire -->
-                    <div class="border border-slate-150 rounded-2xl overflow-hidden shadow-sm">
-                        <button onclick="toggleAccordion('acc-freidora')" class="w-full flex justify-between items-center p-5 bg-slate-50 hover:bg-slate-100 transition-colors text-left">
-                            <span class="font-bold text-base sm:text-lg flex items-center gap-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="wind" aria-hidden="true" class="lucide lucide-wind w-5 h-5 text-sky-500"><path d="M12.8 19.6A2 2 0 1 0 14 16H2"></path><path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"></path><path d="M9.8 4.4A2 2 0 1 1 11 8H2"></path></svg> Freidora de Aire (Airfryer)
+                    <div class="border border-slate-100 rounded-2xl overflow-hidden shadow-sm">
+                        <button onclick="toggleAccordion('acc-freidora')" class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 transition-colors text-left">
+                            <span class="font-semibold text-base flex items-center gap-2">
+                                <i data-lucide="wind" class="w-5 h-5 text-sky-500"></i> Freidora de Aire
                             </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" aria-hidden="true" id="icon-acc-freidora" class="lucide lucide-chevron-down w-5 h-5 transition-transform duration-200"><path d="m6 9 6 6 6-6"></path></svg>
+                            <i id="icon-acc-freidora" data-lucide="chevron-down" class="w-4.5 h-4.5 transition-transform duration-200"></i>
                         </button>
-                        <div id="acc-freidora" class="hidden p-5 bg-white border-t border-slate-150 text-sm sm:text-base text-slate-600 space-y-2">
-                            <p><strong>Fácil uso digital:</strong> Basta con encender el botón táctil principal. Podéis pulsar sobre los iconos (pescado, patatas, carne) para usar programas automáticos, o regular manualmente los grados y minutos con los botones táctiles de flecha. ¡Es comodísima!</p>
+                        <div id="acc-freidora" class="hidden p-4 bg-white border-t border-slate-100 text-sm text-slate-600 space-y-2">
+                            <p><strong>Uso sencillo:</strong> Es digital. Basta con encenderla en el botón táctil de encendido, seleccionar el programa deseado o ajustar directamente la temperatura y el tiempo con las flechas, y darle a iniciar.</p>
                         </div>
                     </div>
 
-                    <!-- Lavadora -->
-                    <div class="border border-slate-150 rounded-2xl overflow-hidden shadow-sm">
-                        <button onclick="toggleAccordion('acc-lavadora')" class="w-full flex justify-between items-center p-5 bg-slate-50 hover:bg-slate-100 transition-colors text-left">
-                            <span class="font-bold text-base sm:text-lg flex items-center gap-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="washing-machine" aria-hidden="true" class="lucide lucide-washing-machine w-5 h-5 text-indigo-500"><path d="M3 6h3"></path><path d="M17 6h.01"></path><rect width="18" height="20" x="3" y="2" rx="2"></rect><circle cx="12" cy="13" r="5"></circle><path d="M12 18a2.5 2.5 0 0 0 0-5 2.5 2.5 0 0 1 0-5"></path></svg> Lavadora
+                    <div class="border border-slate-100 rounded-2xl overflow-hidden shadow-sm">
+                        <button onclick="toggleAccordion('acc-lavadora')" class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 transition-colors text-left">
+                            <span class="font-semibold text-base flex items-center gap-2">
+                                <i data-lucide="washing-machine" class="w-5 h-5 text-indigo-500"></i> Lavadora
                             </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" aria-hidden="true" id="icon-acc-lavadora" class="lucide lucide-chevron-down w-5 h-5 transition-transform duration-200"><path d="m6 9 6 6 6-6"></path></svg>
+                            <i id="icon-acc-lavadora" data-lucide="chevron-down" class="w-4.5 h-4.5 transition-transform duration-200"></i>
                         </button>
-                        <div id="acc-lavadora" class="hidden p-5 bg-white border-t border-slate-150 text-sm sm:text-base text-slate-600 space-y-2">
-                            <p><strong>Uso veloz:</strong> La forma más cómoda de operarla es girando el selector central para escoger un lavado por duración de tiempo. El ciclo completo (enjuague, jabón y centrifugado rápido) se realiza de forma totalmente automática.</p>
+                        <div id="acc-lavadora" class="hidden p-4 bg-white border-t border-slate-100 text-sm text-slate-600 space-y-2">
+                            <p><strong>Fácil de operar:</strong> Lo más cómodo y rápido es girar la rueda para programar por tiempo. El lavado es automatico.</p>
                         </div>
                     </div>
 
-                    <!-- Horno -->
-                    <div class="border border-slate-150 rounded-2xl overflow-hidden shadow-sm">
-                        <button onclick="toggleAccordion('acc-horno')" class="w-full flex justify-between items-center p-5 bg-slate-50 hover:bg-slate-100 transition-colors text-left">
-                            <span class="font-bold text-base sm:text-lg flex items-center gap-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="microwave" aria-hidden="true" class="lucide lucide-microwave w-5 h-5 text-slate-500"><rect width="20" height="15" x="2" y="4" rx="2"></rect><rect width="8" height="7" x="6" y="8" rx="1"></rect><path d="M18 8v7"></path><path d="M6 19v2"></path><path d="M18 19v2"></path></svg> Horno de la Cocina
+                    <div class="border border-slate-100 rounded-2xl overflow-hidden shadow-sm">
+                        <button onclick="toggleAccordion('acc-horno')" class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 transition-colors text-left">
+                            <span class="font-semibold text-base flex items-center gap-2">
+                                <i data-lucide="chef-hat" class="w-5 h-5 text-slate-500"></i> Horno de la Cocina
                             </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" aria-hidden="true" id="icon-acc-horno" class="lucide lucide-chevron-down w-5 h-5 transition-transform duration-200"><path d="m6 9 6 6 6-6"></path></svg>
+                            <i id="icon-acc-horno" data-lucide="chevron-down" class="w-4.5 h-4.5 transition-transform duration-200"></i>
                         </button>
-                        <div id="acc-horno" class="hidden p-5 bg-white border-t border-slate-150 text-sm sm:text-base text-slate-600 space-y-2">
-                            <p><strong>Mandos frontales:</strong> Prestad atención a que únicamente funcionan los <strong>dos botones situados a la derecha</strong> en la placa frontal. Los demás botones de la izquierda pertenecían a los fogones originales de gas y ya no realizan ninguna función.</p>
+                        <div id="acc-horno" class="hidden p-4 bg-white border-t border-slate-100 text-sm text-slate-600 space-y-2">
+                            <p><strong>Nota importante sobre mandos:</strong> Solo funcionan los dos botones situados a la derecha. Los otros botones antiguos corresponden a los viejos fogones y no tienen uso actual.</p>
                         </div>
                     </div>
 
-                    <!-- Plancha Grill y Tostador -->
-                    <div class="border border-slate-150 rounded-2xl overflow-hidden shadow-sm">
-                        <button onclick="toggleAccordion('acc-plancha')" class="w-full flex justify-between items-center p-5 bg-slate-50 hover:bg-slate-100 transition-colors text-left">
-                            <span class="font-bold text-base sm:text-lg flex items-center gap-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="zap" aria-hidden="true" class="lucide lucide-zap w-5 h-5 text-rose-500"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg> Plancha Grill y Tostadora
+                    <div class="border border-slate-100 rounded-2xl overflow-hidden shadow-sm">
+                        <button onclick="toggleAccordion('acc-plancha')" class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 transition-colors text-left">
+                            <span class="font-semibold text-base flex items-center gap-2">
+                                <i data-lucide="zap" class="w-5 h-5 text-rose-500"></i> Plancha Grill & Tostadora
                             </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" aria-hidden="true" id="icon-acc-plancha" class="lucide lucide-chevron-down w-5 h-5 transition-transform duration-200"><path d="m6 9 6 6 6-6"></path></svg>
+                            <i id="icon-acc-plancha" data-lucide="chevron-down" class="w-4.5 h-4.5 transition-transform duration-200"></i>
                         </button>
-                        <div id="acc-plancha" class="hidden p-5 bg-white border-t border-slate-150 text-sm sm:text-base text-slate-600 space-y-2">
-                            <p class="text-rose-600 font-bold">⚠️ Importante para familias con niños:</p>
-                            <p>La plancha grill eléctrica es estupenda para comidas rápidas, pero la tapa metálica superior acumula muchísimo calor y puede provocar quemaduras si los niños la tocan mientras está encendida o enfriándose. Mantenedla en una zona segura de la encimera.</p>
+                        <div id="acc-plancha" class="hidden p-4 bg-white border-t border-slate-100 text-sm text-slate-600 space-y-2">
+                            <p class="text-rose-600 font-bold">⚠️ Atención con los niños:</p>
+                            <p>La plancha grill se calienta de forma muy intensa por la parte superior metálica. Tened mucho cuidado con que los niños no la toquen mientras esté encendida o enfriándose.</p>
+                        </div>
+                    </div>
+
+                    <div class="border border-slate-100 rounded-2xl overflow-hidden shadow-sm">
+                        <button onclick="toggleAccordion('acc-campana')" class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 transition-colors text-left">
+                            <span class="font-semibold text-base flex items-center gap-2">
+                                <i data-lucide="fan" class="w-5 h-5 text-slate-500"></i> Campana Extractora
+                            </span>
+                            <i id="icon-acc-campana" data-lucide="chevron-down" class="w-4.5 h-4.5 transition-transform duration-200"></i>
+                        </button>
+                        <div id="acc-campana" class="hidden p-4 bg-white border-t border-slate-100 text-sm text-slate-600 space-y-2">
+                            <p><strong>Funcionamiento:</strong> Se activa de forma muy cómoda pulsando el interruptor que está situado justo encima del microondas.</p>
+                        </div>
+                    </div>
+
+                    <div class="border border-slate-100 rounded-2xl overflow-hidden shadow-sm">
+                        <button onclick="toggleAccordion('acc-lavavajillas')" class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 transition-colors text-left">
+                            <span class="font-semibold text-base flex items-center gap-2">
+                                <i data-lucide="droplet" class="w-5 h-5 text-sky-500"></i> Lavavajillas
+                            </span>
+                            <i id="icon-acc-lavavajillas" data-lucide="chevron-down" class="w-4.5 h-4.5 transition-transform duration-200"></i>
+                        </button>
+                        <div id="acc-lavavajillas" class="hidden p-4 bg-white border-t border-slate-100 text-sm text-slate-600 space-y-2">
+                            <p>Su uso es intuitivo como cualquier lavavajillas del mercado. Tenéis pastillas para el lavado debajo del fregadero.</p>
                         </div>
                     </div>
 
@@ -756,7 +806,7 @@
                     <div class="bg-white p-6 rounded-3xl border border-slate-150 shadow-sm flex flex-col justify-between">
                         <div>
                             <h4 class="font-bold text-xl text-slate-800 flex items-center gap-2">
-                                🏖️ Playa Principal de Garrucha (Andando)
+                                🏖️ Playa Urbana de Garrucha (a pie)
                             </h4>
                             <p class="text-sm sm:text-base text-slate-600 mt-2 leading-relaxed">
                                 Se encuentra a tan solo <strong>6-7 minutos andando</strong> desde el apartamento. Sus aguas son sumamente calmadas, es una playa limpia y perfecta para refrescarse. A la vuelta, hay una cuesta que suele tomar unos 10-12 minutos caminando.
@@ -768,7 +818,7 @@
                     <div class="bg-white p-6 rounded-3xl border border-slate-150 shadow-sm flex flex-col justify-between">
                         <div>
                             <h4 class="font-bold text-xl text-slate-800 flex items-center gap-2">
-                                🚗 Playa del Boracay (Coche)
+                                🚗 Playa del Boracay (en coche o a pie)
                             </h4>
                             <p class="text-sm sm:text-base text-slate-600 mt-2 leading-relaxed">
                                 Ideal para cuando queráis coger el coche. Está en la zona ampliada recientemente del paseo marítimo de Garrucha y tiene una explanada de <strong>aparcamiento al aire libre 100% gratuito</strong> al lado.
@@ -780,7 +830,7 @@
                     <div class="bg-white p-6 rounded-3xl border border-slate-150 shadow-sm flex flex-col justify-between">
                         <div>
                             <h4 class="font-bold text-xl text-slate-800 flex items-center gap-2">
-                                🌊 Vera Playa y Mojácar (Coche)
+                                🌊 Vera Playa y Mojácar (en coche)
                             </h4>
                             <div class="text-sm sm:text-base text-slate-600 mt-2 space-y-2.5">
                                 <p><strong>Vera:</strong> Playas inmensas con un aparcamiento amplísimo y cómodo. Ideales si buscáis días divertidos de olas.</p>
@@ -807,8 +857,13 @@
                         
                         <!-- Visualizador Alhambra -->
                         <div class="mt-4 pt-4 border-t border-sky-200/60 flex items-center gap-3">
-                            <img src="https://images.unsplash.com/photo-1564658011994-16afe0f4e656?auto=format&amp;fit=crop&amp;w=300&amp;q=80" alt="La Alhambra" class="w-16 h-12 object-cover rounded-lg shadow-sm cursor-pointer hover:opacity-85" onclick="openLightbox(this.src, 'La Alhambra de Granada - Una maravilla declarada Patrimonio de la Humanidad accesible a unas 2h de viaje')">
-                            <span class="text-xs text-sky-900 font-medium"><strong>Visita cultural a Granada:</strong> La monumental Alhambra (Granada) está a unas 2 horas de distancia de Garrucha.</span>
+                            <div class="p-2.5 bg-sky-500/20 rounded-xl text-sky-100 shrink-0 shadow-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                                </svg>
+                            </div>
+                            <span class="text-xs text-sky-950 font-medium flex-1"><strong>Visita cultural a Granada:</strong> La monumental Alhambra (Granada) está a unas 2 horas de distancia de Garrucha.</span>
                         </div>
                     </div>
 
@@ -861,12 +916,13 @@
                 </div>
             </div>
 
-            <!-- SUB TAB: TRANSPORTE -->
+            <!-- SUB TAB: PASEO MARITIMO Y TRANSPORTE -->
             <div id="sub-transporte" class="sub-content hidden space-y-6">
                 <div class="bg-white p-6 sm:p-10 rounded-3xl border border-slate-150 shadow-sm space-y-6">
                     <h4 class="font-serif font-bold text-2xl text-slate-800">Transporte y Paseos Recomendados</h4>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm sm:text-base text-slate-600 leading-relaxed">
+                        <!-- COLUMNA IZQUIERDA -->
                         <div class="space-y-4">
                             <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
                                 <h5 class="font-bold text-slate-800 mb-1 flex items-center gap-2">
@@ -885,6 +941,7 @@
                             </div>
                         </div>
 
+                        <!-- COLUMNA DERECHA -->
                         <div class="space-y-4">
                             <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
                                 <h5 class="font-bold text-slate-800 mb-1 flex items-center gap-2">
@@ -892,16 +949,39 @@
                                 </h5>
                                 <p>El aeropuerto de Almería está a <strong>55 minutos en coche</strong> de la casa. Además, en Vera se está ejecutando la parada del AVE Murcia-Almería que en un futuro cercano mejorará las comunicaciones del pueblo.</p>
                             </div>
-                            <div class="p-5 bg-amber-50 rounded-2xl border border-amber-100 text-amber-950">
-                                <h5 class="font-bold mb-1 flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="sparkles" aria-hidden="true" class="lucide lucide-sparkles w-5 h-5"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg> Paseo del Malecón de Garrucha
-                                </h5>
-                                <p>Dar un paseo temprano por la mañana junto a la barandilla de mármol del Malecón es uno de los mayores lujos del verano. Un ambiente tranquilo, el rumor de los barcos y el mar en calma.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+                            <!-- Tarjeta Destacada del Malecón -->
+                            <div class="p-6 bg-gradient-to-br from-amber-50/90 via-amber-50/50 to-sky-50/50 rounded-2xl border border-amber-200/70 shadow-md relative overflow-hidden">
+                                <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-sky-400/10 rounded-full blur-xl pointer-events-none"></div>
+                                <div class="flex items-center gap-2.5 mb-3">
+                                    <div class="p-2 bg-amber-500/10 rounded-xl text-amber-600 shrink-0 shadow-sm border border-amber-200/30">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                                            <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275Z"></path>
+                                        </svg>
+                                    </div>
+                                    <h5 class="font-serif font-bold text-lg text-amber-950 tracking-tight">
+                                        El Imprescindible: Paseo del Malecón de Garrucha
+                                    </h5>
+                                </div>
+                                <p class="text-sm font-medium italic text-amber-900/90 leading-relaxed pl-1.5 border-left-2 border-amber-300 mb-4">
+                                    "Dar un paseo temprano por la mañana junto a la emblemática barandilla de mármol de Macael del Malecón es uno de los mayores lujos del verano. Encontraréis un ambiente súper tranquilo, el rumor de los barcos y el mar en calma."
+                                </p>
+                                <div class="mt-4 pt-3 border-t border-amber-200/50">
+                                    <p class="font-semibold text-sm mb-1 text-sky-900 flex items-center gap-1.5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-sky-600">
+                                            <path d="M2 12h20M20 12l-4 4M16 8l4 4"/>
+                                        </svg>
+                                        ¡Kilómetros de costa a tus pies!
+                                    </p>
+                                    <p class="text-sm leading-relaxed text-slate-700">
+                                        Lo mejor del Malecón es que no termina en Garrucha. Hacia el norte conecta de forma totalmente natural con las playas y el playazo de <strong class="text-slate-900 font-semibold">Vera</strong>, y hacia el sur se extiende buscando el perfil costero de <strong class="text-slate-900 font-semibold">Mojácar Playa</strong>, creando una de las rutas peatonales junto al mar más largas, bonitas y espectaculares de Andalucía.
+                                    </p>
+                                </div>
+                            </div> <!-- Cierre correcto de la tarjeta -->
+                        </div> <!-- Cierre de la columna derecha -->
+                    </div> <!-- Cierre de la grid -->
+                </div> <!-- Cierre del panel blanco -->
+            </div> <!-- Cierre de #sub-transporte -->
 
         </section>
 
