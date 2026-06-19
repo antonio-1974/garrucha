@@ -191,7 +191,7 @@
                         <img id="img-terraza" src="https://i.postimg.cc/Bvrfc2GF/terraza.webp" alt="Vistas de la Terraza" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent flex flex-col justify-end p-5 text-white">
                             <span class="text-xs uppercase font-extrabold text-sky-300 tracking-wider">La Terraza</span>
-                            <h4 class="font-bold text-lg mt-1 flex items-center gap-2">Vistas y Sombras <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="maximize-2" aria-hidden="true" class="lucide lucide-maximize-2 w-5 h-5 text-slate-300"><path d="M15 3h6v6"></path><path d="m21 3-7 7"></path><path d="m3 21 7-7"></path><path d="M9 21H3v-6"></path></svg></h4>
+                            <h4 class="font-bold text-lg mt-1 flex items-center gap-2">Vistas <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="maximize-2" aria-hidden="true" class="lucide lucide-maximize-2 w-5 h-5 text-slate-300"><path d="M15 3h6v6"></path><path d="m21 3-7 7"></path><path d="m3 21 7-7"></path><path d="M9 21H3v-6"></path></svg></h4>
                         </div>
                     </div>
 
@@ -303,9 +303,9 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="mt-8 pt-6 border-t border-slate-100 flex gap-2">
-                        <img id="img-cocina" src="https://i.postimg.cc/MGM8QdgD/cocina.jpg" alt="Cocina" class="w-16 h-16 object-cover rounded-2xl shadow-sm cursor-pointer hover:opacity-80" onclick="openLightbox(this.src, 'La cocina')">
-                        <span class="text-xs sm:text-sm text-slate-500 italic self-center ml-2 font-medium text-slate-400">Cocina totalmente equipada.</span>
+                    <div class="mt-8 pt-6 border-t border-slate-100 flex gap-4">
+                        <img id="img-terraza" src="https://i.postimg.cc/Bvrfc2GF/terraza.webp" alt="Terraza" class="w-20 h-20 object-cover rounded-2xl shadow-sm cursor-pointer hover:opacity-80" onclick="openLightbox(this.src, 'La terraza')">
+                        <span class="text-xs sm:text-sm text-slate-500 italic self-center text-slate-450 font-medium">Terraza exterior para relajarse.</span>
                     </div>
                 </div>    
 
@@ -627,6 +627,11 @@
                         </div>
                     </div>
 
+                    <div class="mt-8 pt-6 border-t border-slate-100 flex gap-2">
+                        <img id="img-cocina" src="https://i.postimg.cc/MGM8QdgD/cocina.jpg" alt="Cocina" class="w-16 h-16 object-cover rounded-2xl shadow-sm cursor-pointer hover:opacity-80" onclick="openLightbox(this.src, 'La cocina')">
+                        <span class="text-xs sm:text-sm text-slate-500 italic self-center ml-2 font-medium text-slate-400">Cocina totalmente equipada.</span>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -634,8 +639,7 @@
         <!-- SECCIÓN 4: ENTORNO Y GUÍA LOCAL -->
         <section id="content-entorno" class="tab-content hidden space-y-8">
             
-            <!-- Botones Subpestañas del Entorno -->
-            <div class="flex gap-3 border-b border-slate-200 pb-3 overflow-x-auto custom-scrollbar">
+            <div class="sticky top-[64px] z-40 bg-white flex gap-3 border-b border-slate-200 pb-3 pt-2 overflow-x-auto custom-scrollbar">
                 <button onclick="switchSubTab('comer')" id="subtab-comer" class="subtab-btn px-5 py-3 rounded-2xl text-base font-bold whitespace-nowrap bg-med-600 text-white shadow-sm">
                     🍽️ Gastronomía y Tapas
                 </button>
@@ -799,10 +803,10 @@
             </div>
 
             <!-- SUB TAB: PLAYAS -->
+
             <div id="sub-playas" class="sub-content hidden space-y-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     
-                    <!-- Garrucha Centro -->
                     <div class="bg-white p-6 rounded-3xl border border-slate-150 shadow-sm flex flex-col justify-between">
                         <div>
                             <h4 class="font-bold text-xl text-slate-800 flex items-center gap-2">
@@ -814,7 +818,6 @@
                         </div>
                     </div>
 
-                    <!-- Boracay Playa -->
                     <div class="bg-white p-6 rounded-3xl border border-slate-150 shadow-sm flex flex-col justify-between">
                         <div>
                             <h4 class="font-bold text-xl text-slate-800 flex items-center gap-2">
@@ -826,7 +829,6 @@
                         </div>
                     </div>
 
-                    <!-- Vera y Mojácar -->
                     <div class="bg-white p-6 rounded-3xl border border-slate-150 shadow-sm flex flex-col justify-between">
                         <div>
                             <h4 class="font-bold text-xl text-slate-800 flex items-center gap-2">
@@ -839,7 +841,6 @@
                         </div>
                     </div>
 
-                    <!-- Excursiones Especiales -->
                     <div class="bg-gradient-to-br from-sky-50 to-sky-100/40 p-6 rounded-3xl border border-sky-150 shadow-sm flex flex-col justify-between">
                         <div class="space-y-3">
                             <h4 class="font-bold text-xl text-sky-950 flex items-center gap-2">
@@ -855,7 +856,6 @@
                             </ul>
                         </div>
                         
-                        <!-- Visualizador Alhambra -->
                         <div class="mt-4 pt-4 border-t border-sky-200/60 flex items-center gap-3">
                             <div class="p-2.5 bg-sky-500/20 rounded-xl text-sky-100 shrink-0 shadow-sm">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
@@ -863,24 +863,23 @@
                                     <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
                                 </svg>
                             </div>
-                            <span class="text-xs text-sky-950 font-medium flex-1"><strong>Visita cultural a Granada:</strong> La monumental Alhambra (Granada) está a unas 2 horas de distancia de Garrucha.</span>
+                            <span class="text-xs sm:text-sm text-sky-950 font-medium flex-1"><strong>Visita cultural a Granada:</strong> La monumental Alhambra (Granada) está a unas 2 horas de distancia de Garrucha.</span>
                         </div>
                     </div>
 
-                </div>
+                </div> 
             </div>
 
             <!-- SUB TAB: COMPRAS -->
             <div id="sub-compras" class="sub-content hidden space-y-6">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     
-                    <!-- Alimentación -->
                     <div class="bg-white p-6 rounded-2xl border border-slate-150 shadow-sm flex flex-col justify-between">
                         <div>
                             <h4 class="font-bold text-slate-800 text-lg flex items-center gap-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shopping-cart" aria-hidden="true" class="lucide lucide-shopping-cart w-6 h-6 text-emerald-600"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg> Alimentación
                             </h4>
-                            <div class="text-sm text-slate-600 space-y-2.5 mt-3 leading-relaxed">
+                            <div class="text-sm sm:text-base text-slate-600 space-y-2.5 mt-3 leading-relaxed">
                                 <p>🍏 <strong>LIDL:</strong> Abre de lunes a domingo de forma ininterrumpida (a 3 minutos en coche).</p>
                                 <p>🛒 <strong>MERCADONA:</strong> Abre los domingos de verano hasta mediodía.</p>
                                 <p>🍗 <strong>Pollos Asados:</strong> Junto al Lidl hay un puesto magnífico de pollos asados que resulta comodísimo para resolver un almuerzo rápido.</p>
@@ -888,32 +887,30 @@
                         </div>
                     </div>
 
-                    <!-- Comercio Local -->
                     <div class="bg-white p-6 rounded-2xl border border-slate-150 shadow-sm flex flex-col justify-between">
                         <div>
                             <h4 class="font-bold text-slate-800 text-lg flex items-center gap-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shopping-bag" aria-hidden="true" class="lucide lucide-shopping-bag w-6 h-6 text-amber-600"><path d="M16 10a4 4 0 0 1-8 0"></path><path d="M3.103 6.034h17.794"></path><path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path></svg> Comercio Local
                             </h4>
-                            <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+                            <p class="text-sm sm:text-base text-slate-600 mt-3 leading-relaxed">
                                 Los comercios tradicionales y boutiques del pueblo se encuentran principalmente en la <strong>Calle Mayor</strong> y a lo largo de todo el <strong>Paseo del Malecón</strong>. En verano abren de lunes a domingo hasta bien tarde.
                             </p>
                         </div>
                     </div>
 
-                    <!-- Bazares / 24h -->
                     <div class="bg-white p-6 rounded-2xl border border-slate-150 shadow-sm flex flex-col justify-between">
                         <div>
                             <h4 class="font-bold text-slate-800 text-lg flex items-center gap-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="clock" aria-hidden="true" class="lucide lucide-clock w-6 h-6 text-blue-600"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg> Urgencias y Bazares
                             </h4>
-                            <div class="text-sm text-slate-600 mt-3 space-y-2.5 leading-relaxed">
+                            <div class="text-sm sm:text-base text-slate-600 mt-3 space-y-2.5 leading-relaxed">
                                 <p>🏪 <strong>Tienda 24 Horas:</strong> En plena Calle Mayor. Muy útil para compras imprevistas a deshoras.</p>
                                 <p>🏷️ <strong>Gran Bazar Chino:</strong> En la rotonda de salida hacia Mojácar hay un establecimiento gigante y bien surtido abierto los domingos.</p>
                             </div>
                         </div>
                     </div>
 
-                </div>
+                </div> 
             </div>
 
             <!-- SUB TAB: PASEO MARITIMO Y TRANSPORTE -->
