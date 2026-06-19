@@ -61,18 +61,20 @@
 <body class="bg-sand-50 text-slate-800 font-sans min-h-screen flex flex-col antialiased text-lg md:text-xl pb-16">
 
     <!-- HEADER / HERO -->
-    <header class="relative bg-gradient-to-r from-med-900 via-med-800 to-med-700 text-white overflow-hidden shadow-xl">
-        <div class="absolute inset-0 opacity-15 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-white via-med-500 to-transparent"></div>
+    <header class="relative bg-cover bg-center bg-no-repeat text-white overflow-hidden shadow-xl" style="background-image: url('https://i.postimg.cc/XvR6c909/urbanizacion.webp');">
+        <div class="absolute inset-0 bg-gradient-to-r from-med-900/25 via-med-800/20 to-slate-900/20"></div>
+        <div class="absolute inset-0 opacity-15 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent"></div>
+        
         <div class="max-w-6xl mx-auto px-6 py-12 sm:py-20 relative z-10">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
                 <div>
                     <div class="inline-flex items-center gap-2.5 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider text-sky-200 mb-5">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="home" aria-hidden="true" class="lucide lucide-home w-5 h-5"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg> Guía de Invitados • Home Exchange
                     </div>
-                    <h1 class="text-4xl sm:text-6.5xl font-serif font-bold tracking-tight mb-4">
+                    <h1 class="text-4xl sm:text-6.5xl font-serif font-bold tracking-tight mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]">
                         La Casa de Lina y Antonio
                     </h1>
-                    <p class="text-sky-100 text-lg sm:text-xl max-w-xl flex items-center gap-3">
+                    <p class="text-white text-lg sm:text-xl max-w-xl flex items-center gap-3 drop-shadow-[0_1px_3px_rgba(0,0,0,0.6)] font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" aria-hidden="true" class="lucide lucide-map-pin w-6 h-6 text-sky-300 shrink-0"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
                         Garrucha, Almería (Andalucía, España)
                     </p>
@@ -84,44 +86,42 @@
                 </div>
             </div>
 
-            <!-- Acceso Rápido Tarjetas -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12">
-                <!-- Wifi Card -->
-                <div class="bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-white/20 flex items-center justify-between group">
-                    <div class="flex items-center gap-4">
-                        <div class="p-3.5 bg-sky-500/20 rounded-2xl text-sky-200">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="wifi" aria-hidden="true" class="lucide lucide-wifi w-8 h-8"><path d="M12 20h.01"></path><path d="M2 8.82a15 15 0 0 1 20 0"></path><path d="M5 12.859a10 10 0 0 1 14 0"></path><path d="M8.5 16.429a5 5 0 0 1 7 0"></path></svg>
-                        </div>
-                        <div>
-                            <p class="text-xs sm:text-sm text-sky-200 font-semibold uppercase tracking-wider">Wi-Fi de la Casa</p>
-                            <p class="text-xl sm:text-2xl font-extrabold font-mono tracking-widest mt-1">23799646</p>
-                        </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-12 max-w-4xl">
+                
+                <!-- Tarjeta Maps -->
+                <div class="bg-white/10 backdrop-blur-md p-3.5 rounded-2xl border border-white/20 flex items-center gap-3 group">
+                    <div class="p-2.5 bg-sky-500/20 rounded-xl text-sky-200 shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" aria-hidden="true" class="lucide lucide-map-pin w-6 h-6"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
                     </div>
-                    <button onclick="copyWifi()" class="p-3 hover:bg-white/15 active:bg-white/25 rounded-xl text-white transition-all transform hover:scale-105" id="wifi-btn" title="Copiar Contraseña">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="copy" aria-hidden="true" class="lucide lucide-copy w-7 h-7"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
-                    </button>
-                </div>
-
-                <!-- Parking Card -->
-                <div class="bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-white/20 flex items-center gap-4">
-                    <div class="p-3.5 bg-emerald-500/20 rounded-2xl text-emerald-200">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="car" aria-hidden="true" class="lucide lucide-car w-8 h-8"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"></path><circle cx="7" cy="17" r="2"></circle><path d="M9 17h6"></path><circle cx="17" cy="17" r="2"></circle></svg>
-                    </div>
-                    <div>
-                        <p class="text-xs sm:text-sm text-emerald-200 font-semibold uppercase tracking-wider">Plaza de Parking</p>
-                        <p class="text-lg font-bold mt-1">Nº 70 (Planta -1, Ascensor)</p>
+                    <div class="flex-1 min-w-0">
+                        <p class="text-[11px] font-semibold uppercase tracking-wider text-sky-200">Ubicación Casa</p>
+                        <a href="https://maps.google.com/?q=Calle+Francisca+Gonzalez+Perez,+1,+Garrucha,+Almeria" target="_blank" rel="noopener noreferrer" class="text-sm font-bold mt-0.5 text-white hover:underline flex items-center gap-1">
+                            <span class="truncate">Bloq 3, Viv. 49 (Google Maps)</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" aria-hidden="true" class="lucide lucide-external-link w-3.5 h-3.5 text-sky-200 shrink-0"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Emergency Card -->
-                <div class="bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-white/20 flex items-center gap-4">
-                    <div class="p-3.5 bg-amber-500/20 rounded-2xl text-amber-200">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="phone-call" aria-hidden="true" class="lucide lucide-phone-call w-8 h-8"><path d="M13 2a9 9 0 0 1 9 9"></path><path d="M13 6a5 5 0 0 1 5 5"></path><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+                <!-- Tarjeta parking -->
+                <div class="bg-white/10 backdrop-blur-md p-3.5 rounded-2xl border border-white/20 flex items-center gap-3">
+                    <div class="p-2.5 bg-emerald-500/20 rounded-xl text-emerald-200 shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="car" aria-hidden="true" class="lucide lucide-car w-6 h-6"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"></path><circle cx="7" cy="17" r="2"></circle><path d="M9 17h6"></path><circle cx="17" cy="17" r="2"></circle></svg>
                     </div>
                     <div>
-                        <p class="text-xs sm:text-sm text-amber-200 font-semibold uppercase tracking-wider">Urgencias Médicas</p>
-                        <a href="tel:950451571" class="text-lg font-bold hover:underline flex items-center gap-1.5 mt-1 text-white">
-                            950 451 571 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" aria-hidden="true" class="lucide lucide-external-link w-4 h-4 text-sky-200"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+                        <p class="text-[11px] font-semibold uppercase tracking-wider text-emerald-200">Plaza de Parking</p>
+                        <p class="text-sm font-bold mt-0.5 text-white">Nº 70 (Planta -1)</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta Urgencias -->
+                <div class="bg-white/10 backdrop-blur-md p-3.5 rounded-2xl border border-white/20 flex items-center gap-3">
+                    <div class="p-2.5 bg-amber-500/20 rounded-xl text-amber-200 shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="phone-call" aria-hidden="true" class="lucide lucide-phone-call w-6 h-6"><path d="M13 2a9 9 0 0 1 9 9"></path><path d="M13 6a5 5 0 0 1 5 5"></path><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+                    </div>
+                    <div>
+                        <p class="text-[11px] font-semibold uppercase tracking-wider text-amber-200">Urgencias Médicas</p>
+                        <a href="tel:950451571" class="text-sm font-bold hover:underline flex items-center gap-1 mt-0.5 text-white">
+                            950 451 571 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" aria-hidden="true" class="lucide lucide-external-link w-3.5 h-3.5 text-sky-200"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
                         </a>
                     </div>
                 </div>
@@ -266,23 +266,40 @@
                     </div>
                 </div>
 
-                <!-- Cocina, Lavadero y Corriente de Aire -->
+                <!-- Terraza -->
                 <div class="bg-white p-6 sm:p-10 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between">
                     <div>
                         <div class="flex items-center gap-4 mb-5">
                             <div class="p-3 bg-emerald-50 text-emerald-600 rounded-2xl">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chef-hat" aria-hidden="true" class="lucide lucide-chef-hat w-8 h-8"><path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"></path><path d="M6 17h12"></path></svg>
                             </div>
-                            <h4 class="font-bold text-2xl text-slate-800">Cocina, Lavadero y Brisa</h4>
+                            <h4 class="font-bold text-2xl text-slate-800">Terraza</h4>
                         </div>
                         <ul class="space-y-4 text-slate-600 text-base sm:text-lg">
-                            <li class="flex items-start gap-3">
-                                <span class="text-emerald-500 font-extrabold mt-1">•</span>
-                                <span><strong>Brisa Natural:</strong> Un consejo excelente de nuestra casa: abriendo la puerta que da al lavadero en la cocina y abriendo a la vez la terraza del salón, se genera una corriente de aire fresco cruzado maravillosa que refresca toda la casa sin necesidad de encender el Aire Acondicionado central.</span>
+
+                            <li class="flex items-start gap-2">
+                                <span class="text-amber-500 font-bold">•</span>
+                                <span><strong>Noches fabulosas:</strong> Aprovechad al máximo como nosotros la terracita con las vistas al horizonte y la calma de la noche tras un duro día de playa y turismo.</span>
                             </li>
-                            <li class="flex items-start gap-3">
-                                <span class="text-emerald-500 font-extrabold mt-1">•</span>
-                                <span><strong>Nevera y Despensa:</strong> Os hemos dejado unas cervezas bien frías, refrescos, agua y algo para unas tapas rápidas para reponer fuerzas después del viaje. ¡Servíos lo que os apetezca!</span>
+                            <li class="flex items-start gap-2">
+                                <span class="text-amber-500 font-bold">•</span>
+                                <span><strong>Brisa Natural:</strong> ¡Consejo estrella! Al abrir la puerta del lavadero y la de la terraza se crea una corriente de aire fresquito maravillosa.</span>
+                            </li>
+                            <div class="mt-3 p-3 bg-blue-50/60 rounded-2xl border border-blue-100 shadow-sm flex items-start gap-2 text-xs text-slate-600">
+                                <i data-lucide="snowflake" class="w-4 h-4 text-facebook shrink-0 mt-0.5 animate-pulse"></i>
+                                <span>Por supuesto, también podéis usar el aire acondicionado centralizado si el calor aprieta.</span>
+                            </div>
+                            <li class="flex items-start gap-2">
+                                <span class="text-amber-500 font-bold">•</span>
+                                <span><strong>Toldo:</strong> Muy útil al mediodía para ampliar el espacio de sombra en la terraza.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-amber-500 font-bold">•</span>
+                                <span><strong>Iluminación:</strong> Tiene iluminación eléctrica con interruptor dentro del salón, y aparte luces solares con mando propio para desactivarlas si queréis más intimidad.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-amber-500 font-bold">•</span>
+                                <span><strong>Cierre:</strong> Al salir de casa, cerrad la manivela. Si la corredera derecha no encaja, empujad ligeramente el tirador negro hacia arriba.</span>
                             </li>
                         </ul>
                     </div>
@@ -290,9 +307,9 @@
                         <img id="img-cocina" src="https://i.postimg.cc/MGM8QdgD/cocina.jpg" alt="Cocina" class="w-16 h-16 object-cover rounded-2xl shadow-sm cursor-pointer hover:opacity-80" onclick="openLightbox(this.src, 'La cocina')">
                         <span class="text-xs sm:text-sm text-slate-500 italic self-center ml-2 font-medium text-slate-400">Cocina totalmente equipada.</span>
                     </div>
-                </div>
+                </div>    
 
-                <!-- Los Cuartos de Baño -->
+                <!-- Baños y Aseo -->
                 <div class="bg-white p-6 sm:p-10 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between">
                     <div>
                         <div class="flex items-center gap-4 mb-5">
@@ -304,7 +321,7 @@
                         <ul class="space-y-4 text-slate-600 text-base sm:text-lg">
                             <li class="flex items-start gap-3">
                                 <span class="text-sky-500 font-extrabold mt-1">•</span>
-                                <span><strong>Dos Baños Completos:</strong> Contamos con dos baños completos con bañeras amplias y limpias. Tenéis esterillas de baño en los armarios, y uno de los baños cuenta con secador de pelo.</span>
+                                <span><strong>Dos Baños Completos:</strong> Contamos con dos baños completos con bañeras amplias. Tenéis esterillas de baño en los armarios, y uno de los baños cuenta con secador de pelo.</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <span class="text-sky-500 font-extrabold mt-1">•</span>
@@ -318,6 +335,22 @@
                     </div>
                 </div>
 
+                <!-- Detalle de bienvenida -->
+                <div class="bg-white p-6 sm:p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div class="p-3 bg-emerald-50 text-emerald-600 rounded-2xl">
+                            <i data-lucide="chef-hat" class="w-8 h-8"></i>
+                        </div>
+                        <h4 class="font-bold text-2xl text-slate-800">Detalle de Bienvenida</h4>
+                    </div>
+                    <p class="text-base sm:text-lg text-slate-600 mb-5 leading-relaxed">
+                        ¡Hemos dejado en el frigorífico unas cervezas, Coca-Colas, agua fresca y algo para preparar unas tapas tras el largo viaje! Sentíos libres de tomar lo que necesitéis de la despensa.
+                    </p>
+                    <div class="p-4 bg-emerald-50 rounded-2xl text-sm sm:text-base text-emerald-800 flex items-start gap-2">
+                        <i data-lucide="sparkles" class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5"></i>
+                        <span>Los estropajos y bayetas del lavadero están a estrenar para vuestra comodidad.</span>
+                    </div>
+                </div>
             </div>
         </section>
 
