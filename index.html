@@ -161,7 +161,7 @@
             <!-- Mensaje Bienvenida con Galería Dinámica -->
             <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-md border border-slate-100">
                 <h3 class="text-3xl sm:text-4xl font-serif font-bold text-med-800 mb-4">¡Bienvenidos a nuestra casa de Garrucha!</h3>
-                <p class="text-slate-600 leading-relaxed mb-8 text-lg sm:text-xl">
+                <p class="text-slate-600 leading-relaxed mb-8 text-base sm:text-lg">
                     Estamos encantados de compartir con vosotros nuestro piso. Queremos que vuestra estancia sea perfecta, cómoda y completamente relajada. Hemos diseñado este dossier interactivo para que tengáis a mano cada detalle técnico de la casa y nuestras recomendaciones favoritas de playas, paseos y gastronomía en Garrucha. ¡Sentíos como en vuestra propia casa!
                 </p>
                 
@@ -202,7 +202,7 @@
             </div>
 
             <!-- Distribución Detallada de la Casa -->
-            <h3 class="text-3xl font-serif font-bold text-med-800 border-b border-sand-200 pb-3">Estancias y Zonas del Piso</h3>
+            <h3 class="text-3xl font-serif font-bold text-med-800 border-b border-sand-200 pb-3">Estancias del Piso</h3>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10">
                 
@@ -279,21 +279,45 @@
                         <ul class="space-y-4 text-sm sm:text-base text-slate-600">
                             <li class="flex items-start gap-3">
                                 <span class="text-rose-500 font-extrabold mt-1">•</span>
-                                <span><strong>Dormitorio Principal:</strong> Puerta <strong>IZQUIERDA</strong> del armario empotrado libre para vosotros. Encontraréis 2 sets de toallas (baño y manos) y 1 juego de sábanas. El <strong>Router Wi-Fi</strong> está aquí (no lo desconectéis por favor).</span>
+                                <span><strong>Dormitorio Principal:</strong> Puerta <strong>IZQUIERDA</strong> del armario empotrado libre para vosotros. Encontraréis 2 sets de toallas (baño y manos) y 1 juego de sábanas. </span>
                             </li>
+
+                            <!-- NUEVO TIP/CONSEJO: Espacio en los cajones -->
+                            <div class="mt-2.5 p-3 bg-rose-50/60 rounded-2xl border border-rose-100 shadow-sm flex items-start gap-2 text-xs text-slate-600">
+                                <i data-lucide="info" class="w-4 h-4 text-rose-500 shrink-0 mt-0.5 animate-pulse"></i>
+                                <span><strong>ESPACIO:</strong> Una vez coloquéis sábanas y toallas, los cajones liberados los podéis aprovechar para vuestra ropa, así como las perchas superiores.</span>
+                            </div>
+
+                            <!-- NUEVO APARTADO: Tip sombreado para el Router -->
+                            <div class="mt-3 p-3 bg-amber-50 rounded-2xl border border-amber-200 shadow-sm flex items-start gap-2.5 text-xs text-slate-700">
+                                <div class="p-1.5 bg-amber-500/10 rounded-xl text-amber-600 shrink-0 mt-0.5">
+                                    <i data-lucide="wifi-off" class="w-4 h-4 animate-pulse"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-amber-900 mb-0.5">Importante:</p>
+                                    <p class="leading-relaxed">En la mesa está el <strong>Router</strong>. Por favor, aseguraos de no desconectarlo para mantener el internet activo.</p>
+                                </div>
+                            </div>
+
                             <li class="flex items-start gap-3">
                                 <span class="text-rose-500 font-extrabold mt-1">•</span>
                                 <span><strong>Dormitorio Dos Camas:</strong> Puerta <strong>DERECHA</strong> del armario libre. Incluye cajonera interior con 2 juegos de sábanas y 2 juegos de toallas completos.</span>
                             </li>
+                            <li class="flex items-start gap-2.5 ml-4 bg-slate-50/70 p-3 rounded-2xl border border-slate-100 shadow-sm text-xs sm:text-sm">
+                                <span class="text-sky-500 font-black shrink-0 mt-0.5">➜</span>
+                                <span>Dispone de edredón de invierno y almohadas extra en la parte alta.</span>
+                            </li>
+
                             <li class="flex items-start gap-3">
                                 <span class="text-rose-500 font-extrabold mt-1">•</span>
                                 <span><strong>Dormitorio Litera (3 camas):</strong> Puerta <strong>DERECHA</strong> libre con cajonera, equipada con 3 sets de sábanas y toallas para las tres camas individuales.</span>
                             </li>
                         </ul>
                     </div>
+
                     <div class="mt-8 pt-6 border-t border-slate-100 flex gap-4">
-                        <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&amp;fit=crop&amp;w=150&amp;q=80" alt="Dormitorio 1" class="w-20 h-20 object-cover rounded-2xl shadow-sm cursor-pointer hover:opacity-80" onclick="openLightbox(document.getElementById('img-dormitorio').src, 'Dormitorio de matrimonio')">
-                        <span class="text-xs sm:text-sm text-slate-500 italic self-center">Armarios equipados con perchas listos para usar.</span>
+                        <img src="https://i.postimg.cc/s2QRhwbP/matrimonio.jpg" alt="Dormitorio de matrimonio" class="w-20 h-20 object-cover rounded-2xl shadow-sm cursor-pointer hover:opacity-80" onclick="openLightbox(this.src, 'Dormitorio de matrimonio')">
+                        <span class="text-xs sm:text-sm text-slate-500 italic self-center">Armarios con espacio y perchas para acomodar vuestras cosas.</span>
                     </div>
                 </div>
 
@@ -304,7 +328,7 @@
                             <div class="p-3 bg-emerald-50 text-emerald-600 rounded-2xl">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chef-hat" aria-hidden="true" class="lucide lucide-chef-hat w-8 h-8"><path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"></path><path d="M6 17h12"></path></svg>
                             </div>
-                            <h4 class="font-bold text-2xl text-slate-800">Terraza</h4>
+                            <h4 class="font-bold text-2xl text-slate-800">Terraza y relax</h4>
                         </div>
                         <ul class="space-y-4 text-sm sm:text-base text-slate-600">
 
@@ -349,7 +373,7 @@
                             <div class="p-3 bg-sky-50 text-sky-600 rounded-2xl">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="droplet" aria-hidden="true" class="lucide lucide-droplet w-8 h-8"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"></path></svg>
                             </div>
-                            <h4 class="font-bold text-2xl text-slate-800">Baños y Aseo</h4>
+                            <h4 class="font-bold text-2xl text-slate-800">Baños y aseo</h4>
                         </div>
                         <ul class="space-y-4 text-sm sm:text-base text-slate-600">
                             <li class="flex items-start gap-3">
@@ -364,7 +388,7 @@
                     </div>
                     <div class="mt-8 pt-6 border-t border-slate-100 flex gap-4">
                         <img id="img-bano" src="https://i.postimg.cc/nLyfYqtD/bano.jpg" alt="Baño" class="w-20 h-20 object-cover rounded-2xl shadow-sm cursor-pointer hover:opacity-80" onclick="openLightbox(this.src, 'Baño principal')">
-                        <span class="text-xs sm:text-sm text-slate-500 italic self-center font-medium">Equipamiento de cortesía listo.</span>
+                        <span class="text-xs sm:text-sm text-slate-500 italic self-center font-medium">Champus, gel y todo lo que necesitéis está a vuestra disposición.</span>
                     </div>
                 </div>
 
@@ -377,12 +401,8 @@
                         <h4 class="font-bold text-2xl text-slate-800">Detalle de Bienvenida</h4>
                     </div>
                     <p class="text-sm sm:text-base text-slate-600 mb-5 leading-relaxed">
-                        ¡Hemos dejado en el frigorífico unas cervezas, Coca-Colas, agua fresca y algo para preparar unas tapas tras el largo viaje! Sentíos libres de tomar lo que necesitéis de la despensa.
+                        ¡Hemos dejado en el frigorífico unas cervezas, refrescos, agua fresca y algo para tomar unas tapillas tras vuestro viaje! Sentíos libres de tomar lo que necesitéis de los armarios de la cocina.
                     </p>
-                    <div class="p-4 bg-emerald-50 rounded-2xl text-sm sm:text-base text-emerald-800 flex items-start gap-2">
-                        <i data-lucide="sparkles" class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5"></i>
-                        <span>Los estropajos y bayetas del lavadero están a estrenar para vuestra comodidad.</span>
-                    </div>
                 </div>                
 
             </div>
@@ -661,6 +681,10 @@
                         </div>
                     </div>
 
+                    <div class="p-4 bg-emerald-50 rounded-2xl text-xs sm:text-sm text-emerald-800 flex items-start gap-2">
+                        <i data-lucide="sparkles" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                        <span>Estropajos, bayetas y demás productos de limpieza disponibles en el lavadero para vuestro uso.</span>
+                    </div>                   
                     <div class="mt-8 pt-6 border-t border-slate-100 flex gap-2">
                         <img id="img-cocina" src="https://i.postimg.cc/MGM8QdgD/cocina.jpg" alt="Cocina" class="w-16 h-16 object-cover rounded-2xl shadow-sm cursor-pointer hover:opacity-80" onclick="openLightbox(this.src, 'La cocina')">
                         <span class="text-xs sm:text-sm text-slate-500 italic self-center ml-2 font-medium text-slate-400">Cocina totalmente equipada.</span>
@@ -673,9 +697,10 @@
         <!-- SECCIÓN 4: ENTORNO Y GUÍA LOCAL -->
         <section id="content-entorno" class="tab-content hidden space-y-8">
             
+            <!-- BARRA DE NAVEGACIÓN SUBTABS (Actualizada con 5 botones) -->
             <div class="sticky top-[64px] z-40 bg-white flex gap-3 border-b border-slate-200 pb-3 pt-2 overflow-x-auto custom-scrollbar">
                 <button onclick="switchSubTab('comer')" id="subtab-comer" class="subtab-btn px-5 py-3 rounded-2xl text-base font-bold whitespace-nowrap bg-med-600 text-white shadow-sm">
-                    🍽️ Gastronomía y Tapas
+                    🍽️ Gastronomía
                 </button>
                 <button onclick="switchSubTab('playas')" id="subtab-playas" class="subtab-btn px-5 py-3 rounded-2xl text-base font-semibold whitespace-nowrap text-slate-600 bg-white hover:bg-slate-100">
                     🏖️ Playas de Garrucha y Zona
@@ -683,8 +708,11 @@
                 <button onclick="switchSubTab('compras')" id="subtab-compras" class="subtab-btn px-5 py-3 rounded-2xl text-base font-semibold whitespace-nowrap text-slate-600 bg-white hover:bg-slate-100">
                     🛒 Supermercados y Compras
                 </button>
+                <button onclick="switchSubTab('paseo')" id="subtab-paseo" class="subtab-btn px-5 py-3 rounded-2xl text-base font-semibold whitespace-nowrap text-slate-600 bg-white hover:bg-slate-100">
+                    🌊 Paseo Marítimo
+                </button>
                 <button onclick="switchSubTab('transporte')" id="subtab-transporte" class="subtab-btn px-5 py-3 rounded-2xl text-base font-semibold whitespace-nowrap text-slate-600 bg-white hover:bg-slate-100">
-                    🚌 Paseos y Transporte
+                    🚌 Transportes
                 </button>
             </div>
 
@@ -697,55 +725,55 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     
                     <!-- Restaurante Boracay -->
-                    <div class="bg-amber-50/50 p-6 rounded-3xl border border-amber-150 shadow-sm flex flex-col justify-between">
+                    <div class="bg-amber-50/50 p-5 rounded-3xl border border-amber-150 shadow-sm flex flex-col justify-between">
                         <div>
-                            <div class="flex items-center justify-between">
-                                <h4 class="font-bold text-xl text-amber-950 flex items-center gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <h4 class="font-bold text-lg text-amber-950 flex items-center gap-2">
                                     ☕ Restaurante Boracay Beach
                                 </h4>
-                                <span class="px-2.5 py-1 bg-amber-100 text-amber-900 rounded-full text-xs font-bold uppercase tracking-wider">¡Con mucho estilo!</span>
+                                <span class="px-2.5 py-1 bg-amber-100 text-amber-900 rounded-full text-xs font-bold uppercase tracking-wider shrink-0">¡Con mucho estilo!</span>
                             </div>
-                            <p class="text-sm sm:text-base text-amber-950 mt-3 leading-relaxed">
+                            <p class="text-xs sm:text-sm text-amber-950 mt-3 leading-relaxed">
                                 ¡Para disfrutar su gastronomía de tapas y su ambiente nocturno al filo de la playa en un ambiente elegante y selecto de veranito!
                             </p>
                         </div>
-                        <a href="https://maps.app.goo.gl/3UDmzDD2yyTLfL3i7" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center justify-center gap-2 py-3.5 px-4 bg-amber-600 text-white hover:bg-amber-700 rounded-2xl text-sm font-bold transition-colors">
+                        <a href="https://maps.app.goo.gl/3UDmzDD2yyTLfL3i7" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center justify-center gap-2 py-2.5 px-4 bg-amber-600 text-white hover:bg-amber-700 rounded-2xl text-sm font-bold transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map" aria-hidden="true" class="lucide lucide-map w-4.5 h-4.5"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"></path><path d="M15 5.764v15"></path><path d="M9 3.236v15"></path></svg> Ver en Google Maps
                         </a>
                     </div>
 
                     <!-- Cafetería La Yaya (Dulce destacado) -->
-                    <div class="bg-rose-50/50 p-6 rounded-3xl border border-rose-150 shadow-sm flex flex-col justify-between">
+                    <div class="bg-rose-50/50 p-5 rounded-3xl border border-rose-150 shadow-sm flex flex-col justify-between">
                         <div>
-                            <div class="flex items-center justify-between">
-                                <h4 class="font-bold text-xl text-rose-950 flex items-center gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <h4 class="font-bold text-lg text-rose-950 flex items-center gap-2">
                                     ☕ Cafetería "La Yaya"
                                 </h4>
-                                <span class="px-2.5 py-1 bg-rose-100 text-rose-800 rounded-full text-xs font-bold uppercase tracking-wider">¡El mejor dulce!</span>
+                                <span class="px-2.5 py-1 bg-rose-100 text-rose-800 rounded-full text-xs font-bold uppercase tracking-wider shrink-0">¡El mejor dulce!</span>
                             </div>
-                            <p class="text-sm sm:text-base text-rose-900 mt-3 leading-relaxed">
+                            <p class="text-xs sm:text-sm text-rose-900 mt-3 leading-relaxed">
                                 ¡No podéis iros de Garrucha sin merendar en La Yaya! Un lugar emblemático y sumamente recomendable por sus impresionantes crepes dulces, helados, pasteles y repostería artesanal única.
                             </p>
                         </div>
-                        <a href="https://maps.app.goo.gl/UzMRbrXrAA9HhRVV9" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center justify-center gap-2 py-3.5 px-4 bg-rose-600 text-white hover:bg-rose-700 rounded-2xl text-sm font-bold transition-colors">
+                        <a href="https://maps.app.goo.gl/UzMRbrXrAA9HhRVV9" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center justify-center gap-2 py-2.5 px-4 bg-rose-600 text-white hover:bg-rose-700 rounded-2xl text-sm font-bold transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map" aria-hidden="true" class="lucide lucide-map w-4.5 h-4.5"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"></path><path d="M15 5.764v15"></path><path d="M9 3.236v15"></path></svg> Ver en Google Maps
                         </a>
                     </div>
 
                     <!-- Marau Beach Vera -->
-                    <div class="bg-sky-50/50 p-6 rounded-3xl border border-sky-150 shadow-sm flex flex-col justify-between">
+                    <div class="bg-sky-50/50 p-5 rounded-3xl border border-sky-150 shadow-sm flex flex-col justify-between">
                         <div>
-                            <div class="flex items-center justify-between">
-                                <h4 class="font-bold text-xl text-sky-950 flex items-center gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <h4 class="font-bold text-lg text-sky-950 flex items-center gap-2">
                                     🌴 Marau Beach (Vera)
                                 </h4>
-                                <span class="px-2.5 py-1 bg-sky-100 text-sky-800 rounded-full text-xs font-bold uppercase tracking-wider">Plan Exclusivo</span>
+                                <span class="px-2.5 py-1 bg-sky-100 text-sky-800 rounded-full text-xs font-bold uppercase tracking-wider shrink-0">Plan Exclusivo</span>
                             </div>
-                            <p class="text-sm sm:text-base text-sky-900 mt-3 leading-relaxed">
+                            <p class="text-xs sm:text-sm text-sky-900 mt-3 leading-relaxed">
                                 Situado en Vera. Un local espectacular con excelente gastronomía, ambiente veraniego sumamente selecto y perfecto para tomar copas por la noche al aire libre. Gran relación calidad-precio. Reservad con tiempo.
                             </p>
                         </div>
-                        <a href="https://maps.app.goo.gl/VMJAAUB5H4oLE4os8" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center justify-center gap-2 py-3.5 px-4 bg-sky-600 text-white hover:bg-sky-700 rounded-2xl text-sm font-bold transition-colors shadow-sm">
+                        <a href="https://maps.app.goo.gl/VMJAAUB5H4oLE4os8" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center justify-center gap-2 py-2.5 px-4 bg-sky-600 text-white hover:bg-sky-700 rounded-2xl text-sm font-bold transition-colors shadow-sm">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map" aria-hidden="true" class="lucide lucide-map w-4.5 h-4.5"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"></path><path d="M15 5.764v15"></path><path d="M9 3.236v15"></path></svg> Ver en Google Maps
                         </a>
                     </div>
@@ -781,8 +809,7 @@
                                 🐟 Marisquerías y Chiringuitos de Garrucha
                             </h4>
                             <span class="px-2.5 py-1 bg-sky-100 text-sky-800 rounded-full text-xs font-bold uppercase tracking-wider">¡Directo de Lonja!</span>
-                        </div>
-                        
+                        </div>                       
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-5 text-sm sm:text-base text-sky-900 leading-relaxed">
                             <div class="bg-white/60 p-4 rounded-2xl flex flex-col justify-between">
                                 <div>
@@ -809,7 +836,7 @@
                             </div>
                         </div>
                     </div>
-
+                    
                     <!-- Escapada a Mojácar -->
                     <div class="bg-purple-50/50 p-6 sm:p-8 rounded-3xl border border-purple-150 shadow-sm md:col-span-2 space-y-4">
                         <div class="flex items-center justify-between">
@@ -839,12 +866,11 @@
                             </div>
                         </div>
                     </div>
-
+ 
                 </div>
             </div>
 
             <!-- SUB TAB: PLAYAS -->
-
             <div id="sub-playas" class="sub-content hidden space-y-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     
@@ -954,14 +980,60 @@
                 </div> 
             </div>
 
-            <!-- SUB TAB: PASEO MARITIMO Y TRANSPORTE -->
+            <!-- SUB TAB: PASEO MARÍTIMO (Dividido en dos cajas exclusivas a todo el ancho) -->
+            <div id="sub-paseo" class="sub-content hidden space-y-6">
+                <div class="bg-white p-6 sm:p-10 rounded-3xl border border-slate-150 shadow-sm space-y-6">
+                   
+                    <!-- CAJA 1: El Imprescindible (Enfoque experiencial y tonos cálidos) -->
+                    <div class="w-full p-6 bg-gradient-to-br from-amber-50/90 via-amber-50/40 to-orange-50/30 rounded-2xl border border-amber-200/70 shadow-sm relative overflow-hidden">
+                        <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-amber-400/10 rounded-full blur-xl pointer-events-none"></div>
+                        
+                        <div class="flex items-center gap-2.5 mb-4">
+                            <div class="p-2 bg-amber-500/10 rounded-xl text-amber-600 shrink-0 shadow-sm border border-amber-200/40 bg-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                                    <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275Z"></path>
+                                </svg>
+                            </div>
+                            <h5 class="font-serif font-bold text-lg text-amber-950 tracking-tight">
+                                El Imprescindible: Paseo del Malecón de Garrucha
+                            </h5>
+                        </div>
+                        
+                        <p class="text-sm font-medium italic text-amber-900/90 leading-relaxed pl-3 border-l-4 border-amber-400">
+                            "Dar un paseo temprano por la mañana junto a la emblemática barandilla de mármol de Macael del Malecón es uno de los mayores lujos del verano. Encontraréis un ambiente súper tranquilo, el paisaje al fondo con inmensos barcos cargando yeso de Sorbas y el mar en calma."
+                        </p>
+                    </div>
 
+                    <!-- CAJA 2: Conectividad de la Costa (Enfoque de ruta y tonos marinos/frescos) -->
+                    <div class="w-full p-6 bg-gradient-to-br from-sky-50/90 via-sky-50/40 to-emerald-50/30 rounded-2xl border border-sky-200/70 shadow-sm relative overflow-hidden">
+                        <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-emerald-400/10 rounded-full blur-xl pointer-events-none"></div>
+                        
+                        <div class="flex items-center gap-2.5 mb-3">
+                            <div class="p-2 bg-sky-500/10 rounded-xl text-sky-600 shrink-0 shadow-sm border border-sky-200/40 bg-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
+                                    <path d="M2 12h20M20 12l-4 4M16 8l4 4"/>
+                                </svg>
+                            </div>
+                            <h5 class="font-bold text-base text-sky-950 tracking-tight uppercase tracking-wider">
+                                ¡Kilómetros de costa a tus pies!
+                            </h5>
+                        </div>
+                        
+                        <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                            Lo mejor del Malecón es que no termina en Garrucha. Hacia el norte conecta de forma totalmente natural con las playas y el playazo de <strong class="text-slate-950 font-bold">Vera</strong>, y hacia el sur se extiende buscando el perfil costero de <strong class="text-slate-950 font-bold">Mojácar Playa</strong>, creando una de las rutas peatonales junto al mar más largas, bonitas y espectaculares de Andalucía.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--  SUB TAB: TRANSPORTES (Resto de elementos limpios) -->
             <div id="sub-transporte" class="sub-content hidden space-y-6">
                 <div class="bg-white p-6 sm:p-10 rounded-3xl border border-slate-150 shadow-sm space-y-6">
-                    <h4 class="font-serif font-bold text-2xl text-slate-800">Transporte y Paseos Recomendados</h4>
                     
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm sm:text-base text-slate-600 leading-relaxed">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm sm:text-base text-slate-600 leading-relaxed">
                         
+                        <!-- Caja: Ir andando -->
                         <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100 md:col-span-2">
                             <h5 class="font-bold text-slate-800 mb-1 flex items-center gap-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="footprints" aria-hidden="true" class="lucide lucide-footprints w-5 h-5 text-emerald-600"><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z"></path><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z"></path><path d="M16 17h4"></path><path d="M4 13h4"></path></svg> Recomendamos ir andando
@@ -969,58 +1041,29 @@
                             <p>Moverse a pie por Garrucha es la mejor opción. Su emblemático paseo marítimo y su playa están tan cerca que os resultará comodísimo ir caminando y evitar buscar aparcamiento.</p>
                         </div>
 
-                        <div class="space-y-4">
-                            <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
-                                <h5 class="font-bold text-slate-800 mb-1 flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="bus" aria-hidden="true" class="lucide lucide-bus w-5 h-5 text-blue-600"><path d="M8 6v6"></path><path d="M15 6v6"></path><path d="M2 12h19.6"></path><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"></path><circle cx="7" cy="18" r="2"></circle><path d="M9 18h5"></path><circle cx="16" cy="18" r="2"></circle></svg> Autobús de Línea (Línea 2)
-                                </h5>
-                                <p>Esta línea que une Garrucha con Vera y Mojácar tiene unos servicios nocturnos fantásticos en verano. Es perfecta para cenar en Mojácar de copas con la tranquilidad de no usar el coche.</p>
-                                <a href="https://autocaresbaraza.com/horarios-pdf/" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-bold hover:underline mt-3 inline-flex items-center gap-1">
-                                    Ver PDF oficial de horarios <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" aria-hidden="true" class="lucide lucide-external-link w-4 h-4"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
-                                </a>
-                            </div>
+                        <!-- Caja: Autobús -->
+                        <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
+                            <h5 class="font-bold text-slate-800 mb-1 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="bus" aria-hidden="true" class="lucide lucide-bus w-5 h-5 text-blue-600"><path d="M8 6v6"></path><path d="M15 6v6"></path><path d="M2 12h19.6"></path><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"></path><circle cx="7" cy="18" r="2"></circle><path d="M9 18h5"></path><circle cx="16" cy="18" r="2"></circle></svg> Autobús de Línea (Línea 2)
+                            </h5>
+                            <p>Esta línea que une Garrucha con Vera y Mojácar tiene unos servicios nocturnos fantásticos en verano. Es perfecta para cenar en Mojácar de copas con la tranquilidad de no usar el coche.</p>
+                            <a href="https://autocaresbaraza.com/horarios-pdf/" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-bold hover:underline mt-3 inline-flex items-center gap-1 text-sm">
+                                Ver PDF oficial de horarios <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" aria-hidden="true" class="lucide lucide-external-link w-4 h-4"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+                            </a>
                         </div>
 
-                        <div class="space-y-4">
-                            <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
-                                <h5 class="font-bold text-slate-800 mb-1 flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="plane" aria-hidden="true" class="lucide lucide-plane w-5 h-5 text-purple-600"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path></svg> Aeropuerto y AVE
-                                </h5>
-                                <p>El aeropuerto de Almería está a <strong>55 minutos en coche</strong> de la casa. Además, en Vera se está ejecutando la parada del AVE Murcia-Almería que en un futuro cercano mejorará las comunicaciones del pueblo.</p>
-                            </div>
+                        <!-- Caja: Aeropuerto -->
+                        <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
+                            <h5 class="font-bold text-slate-800 mb-1 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="plane" aria-hidden="true" class="lucide lucide-plane w-5 h-5 text-purple-600"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path></svg> Aeropuerto y AVE
+                            </h5>
+                            <p>El aeropuerto de Almería está a <strong>55 minutos en coche</strong> de la casa. Además, en Vera se está ejecutando la parada del AVE Murcia-Almería que en un futuro cercano mejorará las comunicaciones del pueblo.</p>
                         </div>
 
-                        <div class="p-6 bg-gradient-to-br from-amber-50/90 via-amber-50/50 to-sky-50/50 rounded-2xl border border-amber-200/70 shadow-md relative overflow-hidden md:col-span-2">
-                            <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-sky-400/10 rounded-full blur-xl pointer-events-none"></div>
-                            <div class="flex items-center gap-2.5 mb-3">
-                                <div class="p-2 bg-amber-500/10 rounded-xl text-amber-600 shrink-0 shadow-sm border border-amber-200/30">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
-                                        <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275Z"></path>
-                                    </svg>
-                                </div>
-                                <h5 class="font-serif font-bold text-lg text-amber-950 tracking-tight">
-                                    El Imprescindible: Paseo del Malecón de Garrucha
-                                </h5>
-                            </div>
-                            <p class="text-sm font-medium italic text-amber-900/90 leading-relaxed pl-1.5 border-left-2 border-amber-300 mb-4">
-                                "Dar un paseo temprano por la mañana junto a la emblemática barandilla de mármol de Macael del Malecón es uno de los mayores lujos del verano. Encontraréis un ambiente súper tranquilo, el rumor de los barcos y el mar en calma."
-                            </p>
-                            <div class="mt-4 pt-3 border-t border-amber-200/50">
-                                <p class="font-semibold text-sm mb-1 text-sky-900 flex items-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-sky-600">
-                                        <path d="M2 12h20M20 12l-4 4M16 8l4 4"/>
-                                    </svg>
-                                    ¡Kilómetros de costa a tus pies!
-                                </p>
-                                <p class="text-sm leading-relaxed text-slate-700">
-                                    Lo mejor del Malecón es que no termina en Garrucha. Hacia el norte conecta de forma totalmente natural con las playas y el playazo de <strong class="text-slate-900 font-semibold">Vera</strong>, y hacia el sur se extiende buscando el perfil costero de <strong class="text-slate-900 font-semibold">Mojácar Playa</strong>, creando una de las rutas peatonales junto al mar más largas, bonitas y espectaculares de Andalucía.
-                                </p>
-                            </div>
-                        </div>
                     </div> 
                 </div> 
             </div>
-
+       
         </section>
 
         <!-- SECCIÓN 5: TELÉFONOS ÚTILES -->
