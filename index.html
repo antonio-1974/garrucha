@@ -134,10 +134,10 @@
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex overflow-x-auto gap-3 py-4 custom-scrollbar">
                 <button onclick="switchTab('inicio')" id="tab-inicio" class="tab-btn px-6 py-3.5 rounded-2xl text-base font-bold transition-all duration-200 whitespace-nowrap inline-flex items-center gap-2.5 bg-med-100 text-med-800">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="home" aria-hidden="true" class="lucide lucide-home w-6 h-6"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg> El Apartamento
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="home" aria-hidden="true" class="lucide lucide-home w-6 h-6"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg> La Casa
                 </button>
                 <button onclick="switchTab('registro')" id="tab-registro" class="tab-btn px-6 py-3.5 rounded-2xl text-base font-semibold transition-all duration-200 whitespace-nowrap inline-flex items-center gap-2.5 text-slate-600 hover:text-slate-900 hover:bg-slate-100">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="key" aria-hidden="true" class="lucide lucide-key w-6 h-6"><path d="m15.5 7.5 2.3 2.3a1 1 0 0 0 1.4 0l2.1-2.1a1 1 0 0 0 0-1.4L19 4"></path><path d="m21 2-9.6 9.6"></path><circle cx="7.5" cy="15.5" r="5.5"></circle></svg> Entrada y Salida
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="key" aria-hidden="true" class="lucide lucide-key w-6 h-6"><path d="m21 2-9.6 9.6"></path><path d="m15.5 7.5 2.3 2.3a1 1 0 0 0 1.4 0l2.1-2.1a1 1 0 0 0 0-1.4L19 4"></path><circle cx="7.5" cy="15.5" r="5.5"></circle></svg> Entrada y Salida
                 </button>
                 <button onclick="switchTab('electrodomesticos')" id="tab-electrodomesticos" class="tab-btn px-6 py-3.5 rounded-2xl text-base font-semibold transition-all duration-200 whitespace-nowrap inline-flex items-center gap-2.5 text-slate-600 hover:text-slate-900 hover:bg-slate-100">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="cpu" aria-hidden="true" class="lucide lucide-cpu w-6 h-6"><path d="M12 20v2"></path><path d="M12 2v2"></path><path d="M17 20v2"></path><path d="M17 2v2"></path><path d="M2 12h2"></path><path d="M2 17h2"></path><path d="M2 7h2"></path><path d="M20 12h2"></path><path d="M20 17h2"></path><path d="M20 7h2"></path><path d="M7 20v2"></path><path d="M7 2v2"></path><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="8" y="8" width="8" height="8" rx="1"></rect></svg> Electrodomésticos
@@ -155,7 +155,7 @@
     <!-- SECCIONES DE CONTENIDO -->
     <main class="flex-1 max-w-6xl w-full mx-auto p-6 sm:p-10">
         
-        <!-- SECCIÓN 1: EL APARTAMENTO -->
+        <!-- SECCIÓN 1: LA CASA -->
         <section id="content-inicio" class="tab-content space-y-10">
             
             <!-- Mensaje Bienvenida con Galería Dinámica -->
@@ -697,19 +697,22 @@
         <!-- SECCIÓN 4: ENTORNO Y GUÍA LOCAL -->
         <section id="content-entorno" class="tab-content hidden space-y-8">
             
-            <!-- BARRA DE NAVEGACIÓN SUBTABS (Actualizada con 5 botones) -->
+            <!-- BARRA DE NAVEGACIÓN SUBTABS (Actualizada con 6 botones) -->
             <div class="sticky top-[64px] z-40 bg-white flex gap-3 border-b border-slate-200 pb-3 pt-2 overflow-x-auto custom-scrollbar">
                 <button onclick="switchSubTab('comer')" id="subtab-comer" class="subtab-btn px-5 py-3 rounded-2xl text-base font-bold whitespace-nowrap bg-med-600 text-white shadow-sm">
                     🍽️ Gastronomía
                 </button>
                 <button onclick="switchSubTab('playas')" id="subtab-playas" class="subtab-btn px-5 py-3 rounded-2xl text-base font-semibold whitespace-nowrap text-slate-600 bg-white hover:bg-slate-100">
-                    🏖️ Playas de Garrucha y Zona
+                    🏖️ Playas
                 </button>
                 <button onclick="switchSubTab('compras')" id="subtab-compras" class="subtab-btn px-5 py-3 rounded-2xl text-base font-semibold whitespace-nowrap text-slate-600 bg-white hover:bg-slate-100">
-                    🛒 Supermercados y Compras
+                    🛒 Compras
                 </button>
                 <button onclick="switchSubTab('paseo')" id="subtab-paseo" class="subtab-btn px-5 py-3 rounded-2xl text-base font-semibold whitespace-nowrap text-slate-600 bg-white hover:bg-slate-100">
                     🌊 Paseo Marítimo
+                </button>
+                <button onclick="switchSubTab('senderos')" id="subtab-senderos" class="subtab-btn px-5 py-3 rounded-2xl text-base font-semibold whitespace-nowrap text-slate-600 bg-white hover:bg-slate-100">
+                    ⛰️ Rutas a pie
                 </button>
                 <button onclick="switchSubTab('transporte')" id="subtab-transporte" class="subtab-btn px-5 py-3 rounded-2xl text-base font-semibold whitespace-nowrap text-slate-600 bg-white hover:bg-slate-100">
                     🚌 Transportes
@@ -880,7 +883,7 @@
                                 🏖️ Playa Urbana de Garrucha (a pie)
                             </h4>
                             <p class="text-sm sm:text-base text-slate-600 mt-2 leading-relaxed">
-                                Se encuentra a tan solo <strong>6-7 minutos andando</strong> desde el apartamento. Sus aguas son sumamente calmadas, es una playa limpia y perfecta para refrescarse. A la vuelta, hay una cuesta que suele tomar unos 10-12 minutos caminando.
+                                Se encuentra a tan solo <strong>6-7 minutos andando</strong> desde la casa. Sus aguas son sumamente calmadas, es una playa limpia y perfecta para refrescarse. A la vuelta, hay una cuesta que suele tomar unos 10-12 minutos caminando.
                             </p>
                         </div>
                     </div>
@@ -1039,7 +1042,7 @@
                 </div> 
             </div>
 
-            <!-- SUB TAB: PASEO MARÍTIMO (Dividido en dos cajas exclusivas a todo el ancho) -->
+            <!-- SUB TAB: PASEO MARÍTIMO -->
             <div id="sub-paseo" class="sub-content hidden space-y-6">
                 <div class="bg-white p-6 sm:p-10 rounded-3xl border border-slate-150 shadow-sm space-y-6">
                    
@@ -1086,7 +1089,44 @@
                 </div>
             </div>
 
-            <!--  SUB TAB: TRANSPORTES (Resto de elementos limpios) -->
+            <!--  SUB TAB: RUTAS A PIE -->
+            <div id="sub-senderos" class="sub-content hidden space-y-6">
+                <div class="bg-white p-6 sm:p-10 rounded-3xl border border-slate-150 shadow-sm space-y-6">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm sm:text-base text-slate-600 leading-relaxed">
+                        
+                        <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100 md:col-span-2">
+                            <h5 class="font-bold text-slate-800 mb-1 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map" aria-hidden="true" class="lucide lucide-map w-5 h-5 text-emerald-600"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3Z"/><path d="M9 3v15"/><path d="M15 6v15"/></svg>
+                                Explora el entorno natural
+                            </h5>
+                            <p>Ideal aprovechar las primeras horas de la mañana o el atardecer para realizar las rutas, evitando las horas centrales de sol en verano.</p>
+                        </div>
+
+                        <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
+                            <h5 class="font-bold text-slate-800 mb-1 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mountain" aria-hidden="true" class="lucide lucide-mountain w-5 h-5 text-indigo-600"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+                                Senderos de Mojácar y Cabrera
+                            </h5>
+                            <p>Las rutas a pie por las antiguas sendas de Sierra de Cabrera regalan unas vistas panorámicas impresionantes del litoral almeriense. Son recorridos rodeados de un paisaje volcánico y aromas a tomillo y romero.</p>
+                            <a href="https://loc.wiki/u/4882831/l/-2?wa=uc" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-bold hover:underline mt-3 inline-flex items-center gap-1 text-sm">
+                                Ver tracks recomendados en Wikiloc <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" aria-hidden="true" class="lucide lucide-external-link w-4 h-4"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+                            </a>
+                        </div>
+
+                        <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
+                            <h5 class="font-bold text-slate-800 mb-1 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="compass" aria-hidden="true" class="lucide lucide-compass w-5 h-5 text-amber-600"><circle cx="12" cy="12" r="10"></circle><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"></path></svg>
+                                Preparación indispensable
+                            </h5>
+                            <p>Para cualquiera de las caminatas por la zona es fundamental llevar <strong>calzado de montaña o zapatillas deportivas con buen agarre</strong>, gorra y suficiente agua, ya que las fuentes naturales escasean en el terreno mediterráneo.</p>
+                        </div>
+
+                    </div> 
+                </div> 
+            </div>
+
+            <!--  SUB TAB: TRANSPORTES -->
             <div id="sub-transporte" class="sub-content hidden space-y-6">
                 <div class="bg-white p-6 sm:p-10 rounded-3xl border border-slate-150 shadow-sm space-y-6">
                     
