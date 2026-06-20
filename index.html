@@ -207,30 +207,61 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10">
                 
                 <!-- El Salón y Mandos de TV -->
-                <div class="bg-white p-6 sm:p-10 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-4 mb-5">
-                            <div class="p-3 bg-blue-50 text-blue-600 rounded-2xl">
+                <div class="bg-blue-50/50 p-6 sm:p-8 rounded-3xl border border-blue-150 shadow-sm md:col-span-2 space-y-6">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-4">
+                            <div class="p-3 bg-blue-50 text-blue-600 rounded-2xl shadow-sm bg-white">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="tv" aria-hidden="true" class="lucide lucide-tv w-8 h-8"><path d="m17 2-5 5-5-5"></path><rect width="20" height="15" x="2" y="7" rx="2"></rect></svg>
                             </div>
                             <h4 class="font-bold text-2xl text-slate-800">El Salón y el Ocio</h4>
                         </div>
-                        <ul class="space-y-4 text-slate-600 text-base sm:text-lg">
-                            <li class="flex items-start gap-3">
-                                <span class="text-blue-500 font-extrabold mt-1">•</span>
-                                <span><strong>Sofá Extraíble:</strong> Se puede convertir en cama fácilmente, aunque al ser de compra muy reciente el sistema de extracción aún requiere empujar un poquito firme.</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="text-blue-500 font-extrabold mt-1">•</span>
-                                <span><strong>Televisor Grande (Principal):</strong> Funciona con 2 mandos. Para ver la TDT clásica seleccionad <code class="bg-slate-100 px-2 py-0.5 rounded text-xs font-mono font-bold">Source=DVB-T</code>. Para acceder a los canales y contenidos de Movistar seleccionad <code class="bg-slate-100 px-2 py-0.5 rounded text-xs font-mono font-bold">Source=HDMI1</code> (se controla con el Fire TV).</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="text-blue-500 font-extrabold mt-1">•</span>
-                                <span><strong>Televisor Portátil (Pequeño):</strong> Va con pie de ruedas. Perfecto para moverlo al dormitorio o sacarlo a la terraza. Funciona conectado a la alargadera blanca del salón y recibe Movistar por internet.</span>
-                            </li>
-                        </ul>
+                        <span class="px-2.5 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-bold uppercase tracking-wider">¡A disfrutar!</span>
                     </div>
-                    <div class="mt-8 pt-6 border-t border-slate-100 flex gap-4 items-center">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 text-sm sm:text-base text-slate-600 leading-relaxed">
+                        <div class="bg-white/60 p-4 rounded-2xl border border-l-4 border-facebook shadow-sm flex flex-col justify-between">
+                            <div>
+                                <h5 class="font-bold text-slate-800 flex items-center gap-2">
+                                    <span class="text-facebook font-bold">•</span>TV Grande - TDT
+                                </h5>
+                                <p class="text-xs sm:text-sm mt-2">Se ven por la antena habitual seleccionando la fuente <code class="bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded text-xs sm:text-sm font-mono font-bold">Source=DVB-T</code> con el <strong>mando grande</strong> de la televisión. Con este mismo mando se controla todo (canales, volumen, etc.).</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white/60 p-4 rounded-2xl border border-l-4 border-facebook shadow-sm flex flex-col justify-between">
+                            <div>
+                                <h5 class="font-bold text-slate-800 flex items-center gap-2">
+                                    <span class="text-facebook font-bold">•</span>TV Grande - Movistar
+                                </h5>
+                                <p class="text-xs sm:text-sm mt-2">Se accede seleccionando la fuente <code class="bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded text-xs sm:text-sm font-mono font-bold">Source=HDMI1</code>. Una vez dentro, se utiliza el <strong>mando del Fire TV</strong> para controlar la navegación y contenidos, utilizando el mando grande únicamente para encender o apagar.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white/60 p-4 rounded-2xl border border-l-4 border-facebook shadow-sm flex flex-col justify-between">
+                            <div>
+                                <h5 class="font-bold text-slate-800 flex items-center gap-2">
+                                    <span class="text-facebook font-bold">•</span>TV Pequeña Portátil
+                                </h5>
+                                <p class="text-xs sm:text-sm mt-2">Con pie móvil, perfecta para la terraza o el dormitorio. No lleva antena, va con Movistar. El <strong>mando grande</strong> controla encendido/volumen y el <strong>mando del Fire TV</strong> lo demás (es más lenta/antigua).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 pt-2">
+                        <p class="text-xs sm:text-sm text-slate-500 italic border-t border-blue-100/70 pt-3 leading-relaxed">
+                            En ambas TVs podéis iniciar sesión si tenéis alguna plataforma de TV en casa, aunque nosotros os hemos dejado nuestra cuenta operativa para que podáis usarla sin problema.
+                        </p>
+
+                        <div class="p-4 bg-amber-50/80 rounded-2xl border border-amber-200 shadow-sm flex items-start gap-3 text-xs sm:text-sm text-slate-700">
+                            <i data-lucide="alert-circle" class="w-4 h-4 text-amber-600 shrink-0 mt-0.5 animate-pulse"></i>
+                            <div>
+                                <p class="font-bold text-amber-900 mb-0.5">Importante sobre el uso simultáneo:</p>
+                                <p class="leading-relaxed">Lo único que <span class="bg-amber-200/80 px-1 rounded font-bold text-slate-900">no se puede usar Movistar en ambas TVs a la vez</span>. Si por ejemplo los niños quieren ver otra cosa, lo suyo es ver la TV del salón por el TDT de los canales habituales, y la otra TV pequeña por Movistar.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-blue-100/70 flex gap-4 items-center">
                         <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&amp;fit=crop&amp;w=150&amp;q=80" alt="Mini Salón" class="w-20 h-20 object-cover rounded-2xl shadow-sm cursor-pointer hover:opacity-80" onclick="openLightbox(document.getElementById('img-salon').src, 'El Salón y Comedor')">
                         <span class="text-xs sm:text-sm text-slate-500 italic">Tenéis diversos juegos de mesa para las tardes de desconexión en el cajón del mueble de televisión.</span>
                     </div>
@@ -245,7 +276,7 @@
                             </div>
                             <h4 class="font-bold text-2xl text-slate-800">Dormitorios y Descanso</h4>
                         </div>
-                        <ul class="space-y-4 text-slate-600 text-base sm:text-lg">
+                        <ul class="space-y-4 text-sm sm:text-base text-slate-600">
                             <li class="flex items-start gap-3">
                                 <span class="text-rose-500 font-extrabold mt-1">•</span>
                                 <span><strong>Dormitorio Principal:</strong> Puerta <strong>IZQUIERDA</strong> del armario empotrado libre para vosotros. Encontraréis 2 sets de toallas (baño y manos) y 1 juego de sábanas. El <strong>Router Wi-Fi</strong> está aquí (no lo desconectéis por favor).</span>
@@ -275,7 +306,7 @@
                             </div>
                             <h4 class="font-bold text-2xl text-slate-800">Terraza</h4>
                         </div>
-                        <ul class="space-y-4 text-slate-600 text-base sm:text-lg">
+                        <ul class="space-y-4 text-sm sm:text-base text-slate-600">
 
                             <li class="flex items-start gap-2">
                                 <span class="text-amber-500 font-bold">•</span>
@@ -285,10 +316,12 @@
                                 <span class="text-amber-500 font-bold">•</span>
                                 <span><strong>Brisa Natural:</strong> ¡Consejo estrella! Al abrir la puerta del lavadero y la de la terraza se crea una corriente de aire fresquito maravillosa.</span>
                             </li>
-                            <div class="mt-3 p-3 bg-blue-50/60 rounded-2xl border border-blue-100 shadow-sm flex items-start gap-2 text-xs text-slate-600">
+                            
+                            <div class="mt-3 p-3 bg-blue-50/60 rounded-2xl border border-blue-100 shadow-sm flex items-start gap-2 text-xs sm:text-sm text-slate-600">
                                 <i data-lucide="snowflake" class="w-4 h-4 text-facebook shrink-0 mt-0.5 animate-pulse"></i>
                                 <span>Por supuesto, también podéis usar el aire acondicionado centralizado si el calor aprieta.</span>
                             </div>
+
                             <li class="flex items-start gap-2">
                                 <span class="text-amber-500 font-bold">•</span>
                                 <span><strong>Toldo:</strong> Muy útil al mediodía para ampliar el espacio de sombra en la terraza.</span>
@@ -305,9 +338,9 @@
                     </div>
                     <div class="mt-8 pt-6 border-t border-slate-100 flex gap-4">
                         <img id="img-terraza" src="https://i.postimg.cc/Bvrfc2GF/terraza.webp" alt="Terraza" class="w-20 h-20 object-cover rounded-2xl shadow-sm cursor-pointer hover:opacity-80" onclick="openLightbox(this.src, 'La terraza')">
-                        <span class="text-xs sm:text-sm text-slate-500 italic self-center text-slate-450 font-medium">Terraza exterior para relajarse.</span>
+                        <span class="text-xs sm:text-sm text-slate-500 italic self-center font-medium">Terraza exterior para relajarse.</span>
                     </div>
-                </div>    
+                </div> 
 
                 <!-- Baños y Aseo -->
                 <div class="bg-white p-6 sm:p-10 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between">
@@ -318,7 +351,7 @@
                             </div>
                             <h4 class="font-bold text-2xl text-slate-800">Baños y Aseo</h4>
                         </div>
-                        <ul class="space-y-4 text-slate-600 text-base sm:text-lg">
+                        <ul class="space-y-4 text-sm sm:text-base text-slate-600">
                             <li class="flex items-start gap-3">
                                 <span class="text-sky-500 font-extrabold mt-1">•</span>
                                 <span><strong>Dos Baños Completos:</strong> Contamos con dos baños completos con bañeras amplias. Tenéis esterillas de baño en los armarios, y uno de los baños cuenta con secador de pelo.</span>
@@ -331,7 +364,7 @@
                     </div>
                     <div class="mt-8 pt-6 border-t border-slate-100 flex gap-4">
                         <img id="img-bano" src="https://i.postimg.cc/nLyfYqtD/bano.jpg" alt="Baño" class="w-20 h-20 object-cover rounded-2xl shadow-sm cursor-pointer hover:opacity-80" onclick="openLightbox(this.src, 'Baño principal')">
-                        <span class="text-xs sm:text-sm text-slate-500 italic self-center text-slate-450 font-medium">Equipamiento de cortesía listo.</span>
+                        <span class="text-xs sm:text-sm text-slate-500 italic self-center font-medium">Equipamiento de cortesía listo.</span>
                     </div>
                 </div>
 
@@ -343,14 +376,15 @@
                         </div>
                         <h4 class="font-bold text-2xl text-slate-800">Detalle de Bienvenida</h4>
                     </div>
-                    <p class="text-base sm:text-lg text-slate-600 mb-5 leading-relaxed">
+                    <p class="text-sm sm:text-base text-slate-600 mb-5 leading-relaxed">
                         ¡Hemos dejado en el frigorífico unas cervezas, Coca-Colas, agua fresca y algo para preparar unas tapas tras el largo viaje! Sentíos libres de tomar lo que necesitéis de la despensa.
                     </p>
                     <div class="p-4 bg-emerald-50 rounded-2xl text-sm sm:text-base text-emerald-800 flex items-start gap-2">
                         <i data-lucide="sparkles" class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5"></i>
                         <span>Los estropajos y bayetas del lavadero están a estrenar para vuestra comodidad.</span>
                     </div>
-                </div>
+                </div>                
+
             </div>
         </section>
 
@@ -716,36 +750,7 @@
                         </a>
                     </div>
 
-                    <!-- Pescado y Chiringuitos en Garrucha -->
-                    <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-150 shadow-sm space-y-4">
-                        <h4 class="font-bold text-xl text-slate-800 flex items-center gap-2">
-                            🐟 Marisquerías y Chiringuitos de Garrucha
-                        </h4>
-                        <div class="space-y-4 text-base">
-                            <div class="p-4 bg-slate-50 rounded-2xl flex flex-col sm:flex-row justify-between sm:items-center gap-3">
-                                <div>
-                                    <h5 class="font-bold text-slate-800">Mesón del Pescador</h5>
-                                    <p class="text-xs sm:text-sm text-slate-500">Pescado fresco del día directo de la lonja.</p>
-                                </div>
-                                <a href="https://maps.app.goo.gl/i329ZccXihVecHgj7" target="_blank" class="text-sm font-bold text-sky-600 hover:underline shrink-0 flex items-center gap-1">Ver mapa <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" aria-hidden="true" class="lucide lucide-external-link w-4 h-4"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a>
-                            </div>
-
-                            <div class="p-4 bg-slate-50 rounded-2xl flex flex-col sm:flex-row justify-between sm:items-center gap-3">
-                                <div>
-                                    <h5 class="font-bold text-slate-800">Rincón del Puerto</h5>
-                                    <p class="text-xs sm:text-sm text-slate-500">Vistas inmejorables y excelente pescado en el puerto.</p>
-                                </div>
-                                <a href="https://maps.app.goo.gl/ACgXww3KnXMFSLD99" target="_blank" class="text-sm font-bold text-sky-600 hover:underline shrink-0 flex items-center gap-1">Ver mapa <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" aria-hidden="true" class="lucide lucide-external-link w-4 h-4"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a>
-                            </div>
-
-                            <div class="p-4 bg-amber-50/50 rounded-2xl border border-amber-100">
-                                <h5 class="font-bold text-amber-950">Chiringuito Hermanos Moreno</h5>
-                                <p class="text-xs sm:text-sm text-amber-900 mt-1">Conocidos por sus parrilladas de pescado. <strong>Consejo:</strong> Aconsejamos preguntar y pactar el precio de la parrillada con el personal antes de pedirla.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Italianos y Freidurías -->
+                     <!-- Italianos y Freidurías -->
                     <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-150 shadow-sm space-y-4">
                         <h4 class="font-bold text-xl text-slate-800 flex items-center gap-2">
                             🍕 Variedad Gastronómica en Garrucha
@@ -765,6 +770,42 @@
                                     <p class="text-xs sm:text-sm text-slate-500">Perfecto para raciones abundantes y pescadito frito.</p>
                                 </div>
                                 <a href="https://maps.app.goo.gl/zYZa4W8afhW69XQj7" target="_blank" class="text-sm font-bold text-sky-600 hover:underline shrink-0 flex items-center gap-1">Ver mapa <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" aria-hidden="true" class="lucide lucide-external-link w-4 h-4"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a>
+                            </div>
+                        </div>
+                    </div>                   
+
+                    <!-- Pescado y Chiringuitos en Garrucha -->
+                    <div class="bg-sky-50/50 p-6 sm:p-8 rounded-3xl border border-sky-150 shadow-sm md:col-span-2 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <h4 class="font-bold text-xl text-sky-950 flex items-center gap-2">
+                                🐟 Marisquerías y Chiringuitos de Garrucha
+                            </h4>
+                            <span class="px-2.5 py-1 bg-sky-100 text-sky-800 rounded-full text-xs font-bold uppercase tracking-wider">¡Directo de Lonja!</span>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 text-sm sm:text-base text-sky-900 leading-relaxed">
+                            <div class="bg-white/60 p-4 rounded-2xl flex flex-col justify-between">
+                                <div>
+                                    <h5 class="font-bold text-sky-950">🦐 Mesón del Pescador</h5>
+                                    <p class="text-xs sm:text-sm mt-1">Pescado fresco del día directo de la lonja. Una opción fantástica en el pueblo si buscáis calidad y tradición marinera.</p>
+                                </div>
+                                <a href="https://maps.app.goo.gl/i329ZccXihVecHgj7" target="_blank" class="mt-2 text-xs sm:text-sm font-bold text-sky-800 hover:underline flex items-center gap-1">Ver mapa <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" aria-hidden="true" class="lucide lucide-external-link w-3.5 h-3.5"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a>
+                            </div>
+
+                            <div class="bg-white/60 p-4 rounded-2xl flex flex-col justify-between">
+                                <div>
+                                    <h5 class="font-bold text-sky-950">🐙 Rincón del Puerto</h5>
+                                    <p class="text-xs sm:text-sm mt-1">Vistas inmejorables y excelente pescado en pleno puerto marítimo. Perfecto para disfrutar del entorno mientras coméis.</p>
+                                </div>
+                                <a href="https://maps.app.goo.gl/ACgXww3KnXMFSLD99" target="_blank" class="mt-2 text-xs sm:text-sm font-bold text-sky-800 hover:underline flex items-center gap-1">Ver mapa <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" aria-hidden="true" class="lucide lucide-external-link w-3.5 h-3.5"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a>
+                            </div>
+
+                            <div class="bg-amber-50/60 p-4 rounded-2xl border border-amber-100/70 flex flex-col justify-between">
+                                <div>
+                                    <h5 class="font-bold text-amber-950">🔥 Chiringuito El Espigón</h5>
+                                    <p class="text-xs sm:text-sm mt-1 text-amber-900">Gran calidad de pescado. <strong>Precios:</strong> No son los más económicos, pero el rodaballo, el gallo Pedro o el atún a la plancha lo merecen.</p>
+                                </div>
+                                <a href="https://maps.app.goo.gl/XthNX1AGksS9xAGn8" target="_blank" class="mt-2 text-xs sm:text-sm font-bold text-amber-800 hover:underline flex items-center gap-1">Ver mapa <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" aria-hidden="true" class="lucide lucide-external-link w-3.5 h-3.5"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a>
                             </div>
                         </div>
                     </div>
