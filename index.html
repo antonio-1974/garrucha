@@ -940,20 +940,90 @@
             <!-- SUB TAB: COMPRAS -->
             <div id="sub-compras" class="sub-content hidden space-y-6">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    
-                    <div class="bg-white p-6 rounded-2xl border border-slate-150 shadow-sm flex flex-col justify-between">
+
+                    <!--  ALIMENTACIÓN -->
+                    <div class="w-full bg-white p-6 rounded-2xl border border-slate-150 shadow-sm flex flex-col justify-between">
                         <div>
                             <h4 class="font-bold text-slate-800 text-lg flex items-center gap-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shopping-cart" aria-hidden="true" class="lucide lucide-shopping-cart w-6 h-6 text-emerald-600"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg> Alimentación
                             </h4>
-                            <div class="text-sm sm:text-base text-slate-600 space-y-2.5 mt-3 leading-relaxed">
-                                <p>🍏 <strong>LIDL:</strong> Abre de lunes a domingo de forma ininterrumpida (a 3 minutos en coche).</p>
-                                <p>🛒 <strong>MERCADONA:</strong> Abre los domingos de verano hasta mediodía.</p>
-                                <p>🍗 <strong>Pollos Asados:</strong> Junto al Lidl hay un puesto magnífico de pollos asados que resulta comodísimo para resolver un almuerzo rápido.</p>
+
+                            <div class="text-sm sm:text-base text-slate-600 space-y-4 mt-3 leading-relaxed">
+                                <!-- GRANDES SUPERFICIES -->
+                                <div class="space-y-3.5">
+                                    <!-- LIDL -->
+                                    <div class="flex items-start justify-between gap-4 text-sm sm:text-base">
+                                        <p>🍏 <strong>LIDL:</strong> Abierto hasta las 21.30h de lunes a domingo de forma ininterrumpida (a 3 minutes en coche).</p>
+                                        <a href="https://maps.app.goo.gl/wGFJmqSCMNgpRwXLA" target="_blank" rel="noopener noreferrer" class="shrink-0 inline-flex items-center gap-1 py-1 px-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-semibold transition-colors">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 text-slate-500"><circle cx="12" cy="10" r="3"/><path d="M12 21.7c3.6-4 6-7 6-11.7A6 6 0 0 0 6 10c0 4.7 2.4 7.7 6 11.7z"/></svg>
+                                            Maps
+                                        </a>
+                                    </div>
+                                    <!-- MERCADONA -->
+                                    <div class="flex items-start justify-between gap-4 text-sm sm:text-base">
+                                        <p>🛒 <strong>MERCADONA:</strong> Abre también los domingos de verano hasta mediodía (a 5 min en coche).</p>
+                                        <a href="https://maps.app.goo.gl/XRYs7VGT3KG1KAfF8" target="_blank" rel="noopener noreferrer" class="shrink-0 inline-flex items-center gap-1 py-1 px-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-semibold transition-colors">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 text-slate-500"><circle cx="12" cy="10" r="3"/><path d="M12 21.7c3.6-4 6-7 6-11.7A6 6 0 0 0 6 10c0 4.7 2.4 7.7 6 11.7z"/></svg>
+                                            Maps
+                                        </a>
+                                    </div>
+                                    <!-- POLLOS ASADOS -->
+                                    <div class="flex items-start justify-between gap-4 text-sm sm:text-base">
+                                        <p>🍗 <strong>Asador de Jairo:</strong> Junto al Lidl hay un puesto magnífico de pollos asados que resulta comodísimo para resolver un almuerzo rápido y con fácil aparcamiento.</p>
+                                        <a href="https://maps.app.goo.gl/XjWpTpx2VwuJ6zTs7" target="_blank" rel="noopener noreferrer" class="shrink-0 inline-flex items-center gap-1 py-1 px-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-semibold transition-colors">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 text-slate-500"><circle cx="12" cy="10" r="3"/><path d="M12 21.7c3.6-4 6-7 6-11.7A6 6 0 0 0 6 10c0 4.7 2.4 7.7 6 11.7z"/></svg>
+                                            Maps
+                                        </a>
+                                    </div>
+                                    <!-- FREIDURÍA MARINA -->
+                                    <div class="flex items-start justify-between gap-4 text-sm sm:text-base">
+                                        <p>🐟 <strong>Freiduría Marina:</strong> Perfecto para comprar raciones abundantes y pescadito frito buenísimo para llevar a casa.</p>
+                                        <a href="https://maps.app.goo.gl/BpCD1kdes9fY7cPt6" target="_blank" rel="noopener noreferrer" class="shrink-0 inline-flex items-center gap-1 py-1 px-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-semibold transition-colors">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 text-slate-500"><circle cx="12" cy="10" r="3"/><path d="M12 21.7c3.6-4 6-7 6-11.7A6 6 0 0 0 6 10c0 4.7 2.4 7.7 6 11.7z"/></svg>
+                                            Maps
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- SEPARADOR INTERNO -->
+                                <div class="border-t border-slate-100 my-2 pt-2"></div>
+
+                                <!-- TIENDAS LOCALES DE PROXIMIDAD -->
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-2">      
+                                    <!-- Tienda 1: Villasol -->
+                                    <div class="p-3.5 bg-amber-50/40 rounded-xl border border-amber-200/50 flex flex-col justify-between">
+                                        <div>
+                                            <p class="text-xs font-bold text-amber-800 uppercase tracking-wider mb-1 flex items-center gap-1">
+                                                🥖 ¡Ideal para el Pan!
+                                            </p>
+                                            <h6 class="font-bold text-slate-800 text-sm sm:text-base mb-1">Supermercado VILLASOL</h6>
+                                            <p class="text-xs sm:text-sm text-slate-600">Perfecto para la leche y el pan del desayuno. <strong>¡Abre los domingos hasta mediodía!</strong></p>
+                                        </div>
+                                        <a href="https://maps.app.goo.gl/TBXFkW597tErSxX68" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex items-center gap-1 text-xs font-bold text-amber-700 hover:text-amber-800 hover:underline">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><circle cx="12" cy="10" r="3"/><path d="M12 21.7c3.6-4 6-7 6-11.7A6 6 0 0 0 6 10c0 4.7 2.4 7.7 6 11.7z"/></svg>
+                                            Ubicación a pie en 2 min
+                                        </a>
+                                    </div>
+                                    <!-- Tienda 2: Supermercado Dolores -->
+                                    <div class="p-3.5 bg-sky-50/40 rounded-xl border border-sky-200/50 flex flex-col justify-between">
+                                        <div>
+                                            <p class="text-xs font-bold text-sky-800 uppercase tracking-wider mb-1 flex items-center gap-1">
+                                                🚨 Urgencias de alimentación
+                                            </p>
+                                            <h6 class="font-bold text-slate-800 text-sm sm:text-base mb-1">Supermercado DOLORES</h6>
+                                            <p class="text-xs sm:text-sm text-slate-600">También útil para cualquier olvido de alimentación de última hora. <strong>Abierto también los domingos.</strong></p>
+                                        </div>
+                                        <a href="https://maps.app.goo.gl/dmiujkPJVYaabuDN8" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex items-center gap-1 text-xs font-bold text-sky-700 hover:text-sky-800 hover:underline">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><circle cx="12" cy="10" r="3"/><path d="M12 21.7c3.6-4 6-7 6-11.7A6 6 0 0 0 6 10c0 4.7 2.4 7.7 6 11.7z"/></svg>
+                                            Ubicación a pie en 5 min
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Comercio Local -->
                     <div class="bg-white p-6 rounded-2xl border border-slate-150 shadow-sm flex flex-col justify-between">
                         <div>
                             <h4 class="font-bold text-slate-800 text-lg flex items-center gap-2">
@@ -965,14 +1035,15 @@
                         </div>
                     </div>
 
+                    <!-- Bazares y varios-->
                     <div class="bg-white p-6 rounded-2xl border border-slate-150 shadow-sm flex flex-col justify-between">
                         <div>
                             <h4 class="font-bold text-slate-800 text-lg flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="clock" aria-hidden="true" class="lucide lucide-clock w-6 h-6 text-blue-600"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg> Urgencias y Bazares
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="clock" aria-hidden="true" class="lucide lucide-clock w-6 h-6 text-blue-600"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg> Bazares y varios
                             </h4>
                             <div class="text-sm sm:text-base text-slate-600 mt-3 space-y-2.5 leading-relaxed">
-                                <p>🏪 <strong>Tienda 24 Horas:</strong> En plena Calle Mayor. Muy útil para compras imprevistas a deshoras.</p>
-                                <p>🏷️ <strong>Gran Bazar Chino:</strong> En la rotonda de salida hacia Mojácar hay un establecimiento gigante y bien surtido abierto los domingos.</p>
+                                <p>🏪 <strong>Tiendas 24 Horas:</strong> En plena Calle Mayor. Muy útil para compras imprevistas a deshoras.</p>
+                                <p>🏷️ <strong>Euro Market - bazar chino:</strong> Tienda de artículos para el hogar en la rotonda de salida hacia Mojácar (abierto los domingos).</p>
                             </div>
                         </div>
                     </div>
